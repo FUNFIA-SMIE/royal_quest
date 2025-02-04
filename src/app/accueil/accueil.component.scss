@@ -1,0 +1,154 @@
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+
+.container {
+  position: relative;
+}
+
+.text-justify {
+    text-align: justify;
+    text-justify: inter-word; /* Ceci peut aider à forcer un espacement approprié entre les mots */
+}
+
+
+// Ombre personnalisée - shadow-5
+.shadow-5 {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.16);
+  }
+  
+
+.overlap-left {
+  margin-left: -10%; /* Valeur de départ pour grands écrans */
+  z-index: 1;
+  position: relative;
+  
+  // Réinitialisation du margin-left sur écrans moyens (jusqu'à 992px)
+  @include media-breakpoint-down(md) {
+    margin-left: 0;
+  }
+  
+  // Ajustement pour les écrans autour de 992px (medium-large)
+  @media (min-width: 992px) and (max-width: 1024px) {
+    margin-left: -10%; /* Ajuste légèrement la marge pour éviter un chevauchement trop important */
+  }
+}
+
+.overlap-img {
+  width: 100%; /* Utilise toute la largeur sur les petits écrans */
+  height: auto; /* Conserve les proportions */
+  object-fit: cover; /* Couvre l'espace sans distorsion */
+  margin-left: 0; /* Réinitialise la marge */
+  
+  // Sur grands écrans, applique un effet de superposition
+  @include media-breakpoint-up(lg) {
+    width: 60%; /* 60% de la largeur sur grands écrans */
+    margin-left: 30%; /* Applique un décalage pour l'effet de superposition */
+  }
+  
+  // Ajustement pour les écrans moyens à grands (992px - 1024px)
+  @media (min-width: 992px) and (max-width: 1024px) {
+    width: 70%; /* Image plus large sur les écrans moyens */
+    margin-left: 15%; /* Réduit le décalage pour éviter trop de superposition */
+  }
+}
+
+@media (max-width: 768px) {
+  .overlap-img {
+    margin-bottom: 20px; /* Ajoute un espace sous l'image pour les petits écrans */
+  }
+  .overlap-left {
+    margin-left: 0; /* Réinitialise la marge pour les petits écrans */
+  }
+}
+
+@media (max-width: 992px) and (min-height: 655px) {
+  .overlap-left {
+    margin-left: -8%; /* Ajustement fin du chevauchement */
+    margin-top: -3%;
+    position: relative;
+    z-index: 2; /* Assurer que le texte passe au-dessus */
+  }
+
+  .overlap-img {
+    width: 80%; /* Ajuster la largeur pour éviter un décalage excessif */
+    margin-left: 10%; /* Garde l’effet de superposition sans masquer le texte */
+    object-fit: contain; /* Assurer que l'image s'affiche bien sans rognage */
+  }
+
+  .container {
+    padding: 20px; /* Ajout d'un padding pour mieux espacer les éléments */
+  }
+}
+
+
+.overlap-img {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeInLeft 1s ease-out forwards;
+}
+
+.overlap-left {
+  opacity: 0;
+  transform: translateX(50px);
+  animation: fadeInRight 1s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeInLeft {
+  from {
+      opacity: 0;
+      transform: translateX(-50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+      opacity: 0;
+      transform: translateX(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+.custom-font {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.custom-subtext {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  color: #f8f9fa;
+}
+
+/* styles.css ou styles.scss */
+html {
+  scroll-behavior: smooth;
+}
+
+/* app.component.css ou un autre fichier CSS */
+#NosOffres {
+  font-family: 'Roboto', sans-serif;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Agrandir la carte au survol */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajouter une ombre pour l'effet de survol */
+}

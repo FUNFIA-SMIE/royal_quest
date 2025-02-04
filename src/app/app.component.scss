@@ -1,0 +1,24 @@
+/* Assurez-vous que le contenu ne chevauche pas la navbar */
+app-navbar {
+    position: relative;
+    z-index: 10;  /* La navbar reste au-dessus du contenu */
+  }
+  
+  /* Style du contenu qui vient sous la navbar */
+  .content {
+    margin-top: 80px;  /* Ajoutez un espacement suffisant en fonction de la hauteur de votre navbar */
+    padding: 20px;  /* Vous pouvez ajouter un padding pour espacer le contenu du bord */
+  }
+  
+  /* Si la navbar est fixe, utilisez 'position: fixed' */
+  app-navbar.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;  /* Garder la navbar au-dessus du contenu */
+  }
+  
+  main.content {
+    margin-top: 80px;  /* Ajustez en fonction de la hauteur de la navbar fixe */
+  }
+  
