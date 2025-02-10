@@ -1,1 +1,57 @@
-<p>nosy-be works!</p>
+<div class="container">
+  <header class="shadow-sm my-2" style="text-align: center; padding: 50px 0;">
+    <h1 style="font-size: 4em; margin: 0;">
+      Nosy Be
+    </h1>
+  </header>
+
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div *ngFor="let slide of slides; let i = index" class="carousel-item" [class.active]="i === 0">
+        <div class="row">
+          <div class="col-4" *ngFor="let image of slide">
+            <img [src]="image" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<div class="container m-3 py-3">
+
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <p class="lead p-5">De 1639 à 1689, le roi Andriamaitso, profondément attaché à la nature, fit de l'île de Nosy Be son royaume préféré. C’est à Lokobe, un lieu mystique et sacré, qu’il découvrit une forêt d’une densité incroyable, où la grandeur de la nature se mêle aux légendes anciennes. En explorant cette jungle préservée, il rencontra des espèces endémiques d’une beauté rare, telles que le caméléon panthère et le lémurien noir. Aujourd’hui, Lokobe reste un sanctuaire protégé, un havre de paix où repose le roi, et où chaque souffle d'air semble chuchoter les secrets du passé.</p>
+    </div>
+    <div class="col-12 col-md-6 d-flex justify-content-center">
+      <img class="img-fluid" src="/LOKOBE/Lokobe2.JPG" alt="Vue de la forêt de Lokobe">
+    </div>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-12 col-md-6 mt-5">
+      <img class="img-fluid w-50" src="/LOKOBE/Lokobe5.jpg" alt="Plage et paysage de Nosy Be">
+      <img class="img-fluid w-50" src="/LOKOBE/Lokobe6.jpg" alt="Faune de Nosy Be">
+    </div>
+    <div class="col-12 col-md-6">
+      <p class="lead p-5">Venez suivre les pas du roi et laissez-vous envoûter par la magie de Nosy Be, un véritable joyau caché de Madagascar. Imaginez-vous sur des plages de sable blanc éclatant, baignées dans des eaux turquoise d'une transparence irréelle, bordées de palmiers majestueux et de plantations de canne à sucre qui déploient une végétation luxuriante. Les forêts tropicales, quant à elles, sont peuplées d'une faune fascinante, où l'on croise des lémuriens malicieux et des caméléons aux couleurs éclatantes. En mer, les récifs coralliens, vibrants de mille couleurs, dissimulent un monde sous-marin d'une beauté stupéfiante, où les poissons tropicaux et les tortues de mer glissent dans une danse silencieuse.</p>
+    </div>
+  </div>
+
+  <div class="row my-5">
+    <div class="col-12">
+      <p class="lead">Nosy Be n’est pas simplement une destination, mais un véritable paradis où chaque instant invite à l’émerveillement. Un lieu où l’histoire et la nature se rencontrent, où chaque pas vous rapproche d'une beauté sauvage et authentique. Suivez les traces du roi, et laissez-vous envoûter par l’essence même de Madagascar.</p>
+    </div>
+  </div>
+
+</div>
+
