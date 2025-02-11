@@ -1,64 +1,23 @@
-/* Animation de fade-in */
-.fade-in {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInUp 1s ease-out forwards;
+p {
+    text-align: justify;
+    font-family: 'Poppins';
+    /* Choisit la police Arial, avec une alternative sans-serif */
+    font-size: 16px;
+    /* Définit la taille de la police */
+    font-weight: normal;
+    /* Définit l'épaisseur de la police */
+    line-height: 1.5;
 }
 
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+li {
+    text-align: justify;
+    font-family: 'Poppins';
+    /* Choisit la police Arial, avec une alternative sans-serif */
+    font-size: 16px;
+    /* Définit la taille de la police */
+    font-weight: normal;
+    /* Définit l'épaisseur de la police */
+    line-height: 1.5;
 
-/* Animation pour les icônes et les sections */
-.slide-in-left {
-    opacity: 0;
-    transform: translateX(-50px);
-    animation: slideInLeft 1s ease-out forwards;
-}
-
-@keyframes slideInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-50px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.slide-in-right {
-    opacity: 0;
-    transform: translateX(50px);
-    animation: slideInRight 1s ease-out forwards;
-}
-
-@keyframes slideInRight {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-/* Zoom léger sur l'image au survol */
-.img-hover-zoom {
-    transition: transform 0.5s ease-in-out;
-}
-
-.img-hover-zoom:hover {
-    transform: scale(1.1);
 }

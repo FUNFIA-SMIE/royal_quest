@@ -1,0 +1,29 @@
+header:hover {
+    filter: blur(0); /* Retire le flou lors du survol */
+}
+
+p {
+    line-height: 1.6;
+    text-align: justify;
+    /* Justification du texte */
+    font-family: 'Poppins';
+    font-size: 16px;
+    /* Définit l'épaisseur de la police */
+    line-height: 1.5;
+  
+  
+  }
+
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bord arrondi pour un effet doux */
+    transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre portée pour les images */
+}
+
+.image:hover {
+    transform: scale(1.05); /* Agrandit légèrement l'image au survol */
+    filter: brightness(1.2); /* Augmente la luminosité lors du survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée au survol */
+}
