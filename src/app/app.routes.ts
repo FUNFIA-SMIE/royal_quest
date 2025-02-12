@@ -11,6 +11,7 @@ import { NosyBEComponent } from './content_nos_tours/nosy-be/nosy-be.component';
 import { SainteMArieComponent } from './content_nos_tours/sainte-marie/sainte-marie.component';
 import { SudComponent } from './content_nos_tours/sud/sud.component';
 import { RakobaComponent } from './content_nos_tours/rakoba/rakoba.component';
+import { NosParcsComponent } from './nos-parcs/nos-parcs.component';
 
 export const routes: Routes = [
     {path: '', component: AccueilComponent},
@@ -24,7 +25,9 @@ export const routes: Routes = [
     {path: 'Nosy_be', component: NosyBEComponent},
     {path: 'Sainte_marie', component: SainteMArieComponent},
     {path: 'Sud', component: SudComponent},
-    {path: 'Rakoba', component: RakobaComponent}
+    {path: 'Rakoba', component: RakobaComponent},
+    {path: 'Parcs', component: NosParcsComponent},
+
 
 
 
