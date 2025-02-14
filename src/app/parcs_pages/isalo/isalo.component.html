@@ -1,0 +1,45 @@
+<h2 mat-dialog-title class="shadow-sm" style="text-align: center;">Isalo</h2>
+<mat-dialog-content class="mat-typography">
+
+    <div class="row">
+        <div class="col-md-6 col-12">
+            <p>
+                Au cœur du parc Isalo à Madagascar, un véritable paradis naturel s'ouvre à vous, où chaque instant est
+                une invitation à l'émerveillement. Ce sanctuaire enchanteur dévoile une beauté saisissante : des
+                formations rocheuses aux contours majestueux, sculptées par le souffle du temps, se dressent avec fierté
+                sous un ciel d’un bleu éclatant. Les lémuriens, joyaux vivants de cette terre, bondissent avec grâce
+                d’une branche à l’autre, leurs cris joyeux créant une mélodie qui résonne dans l’air chaud et vibrant.
+            </p>
+            <p>
+                Les piscines naturelles, aux eaux turquoise éclatantes, scintillent comme des joyaux incrustés dans un
+                écrin de paysages arides, invitant les voyageurs à plonger dans leur fraîcheur bienfaisante et à
+                s’abandonner à la quiétude. La célèbre fenêtre d'Isalo, une sculpture unique façonnée par la nature,
+                offre un panorama à couper le souffle : au coucher du soleil, les collines s’illuminent de teintes
+                orangées et violettes, peignant une toile vivante qui célèbre la magnificence de ce sanctuaire.
+            </p>
+            <p>
+                Dans ce refuge sauvage, chaque plante endémique, chaque relief grandiose, raconte une histoire ancienne
+                et envoûtante, unissant l’homme et la nature dans une harmonie merveilleuse. Venez découvrir cette
+                expérience inoubliable, où l’aventure et la sérénité se rencontrent, vous promettant des souvenirs
+                gravés à jamais dans votre cœur.
+            </p>
+        </div>
+        <div class="col-md-6 col-12 text-center">
+            <owl-carousel-o [options]="carouselOptions">
+                <ng-container *ngFor="let image of images">
+                    <ng-template carouselSlide>
+                        <img [src]="image" alt="Image du parc" class="img-fluid rounded">
+                    </ng-template>
+                </ng-container>
+            </owl-carousel-o>
+        </div>
+
+
+
+    </div>
+
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancel</button>
+</mat-dialog-actions>

@@ -1,0 +1,29 @@
+<h2 mat-dialog-title class="shadow-sm" style="text-align: center;">Reniala</h2>
+<mat-dialog-content class="mat-typography">
+
+    <div class="row">
+        <div class="col-md-6 col-12">
+            <p>Dans le parc national de Lokobe, à Nosy Be, un monde préservé et envoûtant s'offre à vous, un véritable sanctuaire où la beauté inégalée de la faune et de la flore se déploie dans un écrin de nature luxuriante. En entrant dans ce royaume tropical, vous serez accueilli par une symphonie de sons qui enchante les sens : le chant des oiseaux exotiques s’élève dans la canopée, tandis que des lémuriens espiègles gambadent joyeusement parmi les branches, insufflant une vie vibrante à ce tableau verdoyant.</p>
+            <p>Les sentiers sinueux invitent à l'exploration à travers cette jungle dense, où des arbres majestueux, drapés de lianes et de mousse, forment des voûtes naturelles qui filtrent la lumière du soleil en éclats d'or et de vert. La flore, riche et variée, révèle un trésor d’espèces endémiques, des orchidées éclatantes aux palmiers majestueux, formant une palette de couleurs saisissantes qui émerveille le regard et réchauffe le cœur. Chaque inhalation vous emporte davantage dans ce royaume enchanteur, embaumé par le parfum enivrant des plantes aromatiques, vous invitant à explorer encore plus profondément.</p>
+            <p>Au fil de votre balade, les rivières scintillantes et les mares tranquilles créent des havres de paix, où la vie aquatique éveille la curiosité : des caméléons se faufilent délicatement parmi les feuilles et des grenouilles aux teintes vibrantes s'épanouissent dans leur habitat. À chaque tournant, une nouvelle merveille se présente, des oiseaux aux plumages éclatants aux insectes aux formes insolites, témoignant de la richesse incroyable de la biodiversité que ce parc a à offrir.</p>
+        </div>
+        <div class="col-md-6 col-12 text-center">
+            <owl-carousel-o [options]="carouselOptions" class="sticky-image">
+                <ng-container *ngFor="let image of images">
+                    <ng-template carouselSlide>
+                        <img [src]="image" alt="Image du parc" style="height: 450px;" class="img-fluid rounded">
+                    </ng-template>
+                </ng-container>
+            </owl-carousel-o>
+        </div>
+        <div class="col-12">
+            <p>À la tombée de la nuit, la forêt s'éveille d'une magie nouvelle ; le crépuscule fait résonner le chant des grenouilles et le bruissement des insectes, transformant le parc en une scène vivante où chaque son raconte une histoire unique. Le parc national de Lokobe n’est pas seulement une destination; c’est une immersion profonde dans un monde authentique, un lieu où la beauté sauvage de Madagascar vous entoure et s'imprime à jamais dans votre mémoire. Venez découvrir ces paysages enchanteurs et laissez-vous emporter par l'esprit vibrant de la nature dans toute sa splendeur.</p>
+
+        </div>
+    </div>
+
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancel</button>
+</mat-dialog-actions>

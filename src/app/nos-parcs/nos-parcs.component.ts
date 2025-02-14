@@ -1,13 +1,22 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, OnInit } from '@angular/core';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDialog } from '@angular/material/dialog';
+import { AndasibeComponent } from '../parcs_pages/andasibe/andasibe.component';
+import { RanomafanaComponent } from '../parcs_pages/ranomafana/ranomafana.component';
+import { AnjaComponent } from '../parcs_pages/anja/anja.component';
+import { IsaloComponent } from '../parcs_pages/isalo/isalo.component';
+import { TsingyComponent } from '../parcs_pages/tsingy/tsingy.component';
+import { RenialComponent } from '../parcs_pages/renial/renial.component';
+import { LokobeComponent } from '../parcs_pages/lokobe/lokobe.component';
 
 @Component({
   selector: 'app-nos-parcs',
   standalone: true,
-  imports: [NgbCarouselModule, CommonModule, CarouselModule],
+  imports: [NgbCarouselModule, CommonModule, CarouselModule, MatIconModule],
   templateUrl: './nos-parcs.component.html',
   styleUrl: './nos-parcs.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -35,7 +44,7 @@ export class NosParcsComponent {
 
     navSpeed: 700,
 
-    navText: ['', ''],
+    navText: ['❮', '❯'],    // Icônes des boutons précédent/suivant
 
     responsive: {
 
@@ -81,59 +90,114 @@ export class NosParcsComponent {
       id: 2, img: "/Ranomafana/Ranomafana1.jpg", title: "Ranomafana", content: "Au cœur du Parc National de Ranomafana, un véritable havre de biodiversité, les visiteurs sont immergés .........."
     },
 
-    { 
+    {
       id: 3, img: "/Anja/Anja3.jpg", title: "Anja", content: "Au cœur du Parc National de Ranomafana, un véritable havre de biodiversité, les visiteurs sont immergés .........."
     },
 
-    { 
+    {
       id: 4, img: "/Isalo/Isalo3.jpg", title: "Isalo", content: "Au cœur du Parc National de Ranomafana, un véritable havre de biodiversité, les visiteurs sont immergés .........."
     },
 
-    { 
+    {
       id: 5, img: "/Tsingy/Tsingy2.jpg", title: "Tsingy", content: "Au cœur du Parc National de Ranomafana, un véritable havre de biodiversité, les visiteurs sont immergés .........."
-      
+
     },
 
-    { 
+    {
 
       id: 6, img: "/Reniala/Reniala3.jpg", title: "Reniala", content: "Au cœur du Parc National de Ranomafana, un véritable havre de biodiversité, les visiteurs sont immergés .........."
-    
+
     },
 
-    { 
+    {
 
       id: 7, img: "/Lokobe/Lokobe1.jpg", title: "Lokobe", content: "Au cœur du Parc National de Ranomafana, un véritable havre de biodiversité, les visiteurs sont immergés .........."
-    
+
     }
   ];
 
-  //  images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
-  /*
-    slide = [
-      [
-        '/Pangalanes/Pangalane1.jpg',
-        '/Pangalanes/Pangalane2.jpg',
-        '/Pangalanes/Pangalane3.jpg'
-      ],
-      [
-        '/Pangalanes/Pangalane5.jpg',
-        '/Pangalanes/Pangalane6.jpg',
-        '/Pangalanes/Pangalane1.jpg'
-      ]
-    ];
-  
-    slides = [
-      [
-        { src: '/Pangalanes/Pangalane1.jpg', alt: 'Image 1',title:'Andasibe ' },
-        { src: '/Pangalanes/Pangalane2.jpg', alt: 'Image 2' },
-        { src: '/Pangalanes/Pangalane3.jpg', alt: 'Image 3' },
-        { src: '/Pangalanes/Pangalane5.jpg', alt: 'Image 4' }
-      ],
-      [
-        { src: '/Pangalanes/Pangalane5.jpg', alt: 'Image 1' },
-        { src: '/Pangalanes/Pangalane3.jpg', alt: 'Image 2' },
-        { src: '/Pangalanes/Pangalane2.jpg', alt: 'Image 3' },
-        { src: '/Pangalanes/Pangalane1.jpg', alt: 'Image 4' }
-      ]
-    ];*/
+  readonly dialog = inject(MatDialog);
+  openDialog(title: any) {
+
+    let component;
+
+    if (title === "Andasibe") {
+      const dialogRef = this.dialog.open(AndasibeComponent, {
+        width: '500%', // Taille du dialogue, ajustez comme nécessaire
+        data: { message: 'Bonjour depuis le composant parent!' } // Transmettre des données au dialogue, si nécessaire
+      });
+
+      dialogRef.afterClosed().subscribe(result => {
+        console.log(`Dialog result: ${result}`);
+      });
+    }
+
+    if (title === "Ranomafana") {
+      const dialogRef = this.dialog.open(RanomafanaComponent, {
+        width: '500%', // Taille du dialogue, ajustez comme nécessaire
+        data: { message: 'Bonjour depuis le composant parent!' } // Transmettre des données au dialogue, si nécessaire
+      });
+
+      dialogRef.afterClosed().subscribe(result => {
+        console.log(`Dialog result: ${result}`);
+      });
+    }
+
+    if (title === "Anja") {
+      const dialogRef = this.dialog.open(AnjaComponent, {
+        width: '500%', // Taille du dialogue, ajustez comme nécessaire
+        data: { message: 'Bonjour depuis le composant parent!' } // Transmettre des données au dialogue, si nécessaire
+      });
+
+      dialogRef.afterClosed().subscribe(result => {
+        console.log(`Dialog result: ${result}`);
+      });
+    }
+
+    if (title === "Isalo") {
+      const dialogRef = this.dialog.open(IsaloComponent, {
+        width: '500%', // Taille du dialogue, ajustez comme nécessaire
+        data: { message: 'Bonjour depuis le composant parent!' } // Transmettre des données au dialogue, si nécessaire
+      });
+
+      dialogRef.afterClosed().subscribe(result => {
+        console.log(`Dialog result: ${result}`);
+      });
+    }
+
+    if (title === "Tsingy") {
+      const dialogRef = this.dialog.open(TsingyComponent, {
+        width: '500%', // Taille du dialogue, ajustez comme nécessaire
+        data: { message: 'Bonjour depuis le composant parent!' } // Transmettre des données au dialogue, si nécessaire
+      });
+
+      dialogRef.afterClosed().subscribe(result => {
+        console.log(`Dialog result: ${result}`);
+      });
+    }
+
+    if (title === "Reniala") {
+      const dialogRef = this.dialog.open(RenialComponent, {
+        width: '500%', // Taille du dialogue, ajustez comme nécessaire
+        data: { message: 'Bonjour depuis le composant parent!' } // Transmettre des données au dialogue, si nécessaire
+      });
+
+      dialogRef.afterClosed().subscribe(result => {
+        console.log(`Dialog result: ${result}`);
+      });
+    }
+
+    if (title === "Lokobe") {
+      const dialogRef = this.dialog.open(LokobeComponent, {
+        width: '500%', // Taille du dialogue, ajustez comme nécessaire
+        data: { message: 'Bonjour depuis le composant parent!' } // Transmettre des données au dialogue, si nécessaire
+      });
+
+      dialogRef.afterClosed().subscribe(result => {
+        console.log(`Dialog result: ${result}`);
+      });
+    }
+
+}
+
 }

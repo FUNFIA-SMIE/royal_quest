@@ -1,0 +1,48 @@
+<h2 mat-dialog-title class="shadow-sm" style="text-align: center;">Ranomafana</h2>
+<mat-dialog-content class="mat-typography">
+
+    <div class="row align-items-center">
+        <div class="col-md-6 col-12">
+            <p>
+                Au cœur du Parc National de Ranomafana, un véritable havre de biodiversité, les visiteurs sont immergés
+                dans un monde vibrant de vie, où la forêt tropicale bouillonne d'animaux fascinants aux histoires
+                captivantes. Parmi les joyaux de cette nature exubérante, le célèbre lémurien doré, souvent appelé
+                "lémurien à coiffure", se distingue par son pelage éclatant qui scintille sous le soleil, tandis que le
+                sifaka, avec ses sauts gracieux, enchante tous les regards avec des acrobaties époustouflantes. En
+                explorant les sentiers sinueux, vous aurez également la chance de croiser l’étrange aye-aye, un lémurien
+                nocturne si singulier, dont le doigt long et délicat est un outil de précision pour débusquer les larves
+                cachées dans les troncs d'arbres.
+            </p>
+            <p>
+                À chaque détour, les caméléons multicolores et les grenouilles endémiques, aux motifs saisissants, se
+                dissimulent entre les feuilles, ajoutant une touche de magie à cette aventure sensorielle. Au-dessus de
+                vous, une symphonie d'oiseaux exotiques, tels que le vanga à tête bleue et le tarier de Madagascar,
+                enrichit le paysage de leurs chants mélodieux et de plumages éblouissants, créant une atmosphère
+                féerique. Chaque avancée sur les sentiers de Ranomafana révèle une nouvelle facette de cet écosystème
+                extraordinaire, faisant de cet endroit une destination incontournable pour les passionnés de nature
+                désireux de découvrir la magie insoupçonnée de la faune malgache dans un cadre naturel à couper le
+                souffle. Plongez dans ce sanctuaire de vie sauvage et laissez-vous émerveiller par les trésors cachés de
+                ce paradis sur terre.
+            </p>
+
+
+        </div>
+        <div class="col-md-6 col-12 text-center">
+            <owl-carousel-o [options]="carouselOptions">
+                <ng-container *ngFor="let image of images">
+                    <ng-template carouselSlide>
+                        <img [src]="image" alt="Image du parc" class="img-fluid rounded" style="height: 450px;">
+                    </ng-template>
+                </ng-container>
+            </owl-carousel-o>
+        </div>
+
+
+
+    </div>
+
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancel</button>
+</mat-dialog-actions>

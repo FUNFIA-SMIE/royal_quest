@@ -1,0 +1,34 @@
+<h2 mat-dialog-title class="shadow-sm" style="text-align: center;">Reniala</h2>
+<mat-dialog-content class="mat-typography">
+
+    <div class="row">
+        <div class="col-md-6 col-12">
+            <p>Plongez dans le parc Reniala, un véritable sanctuaire de la nature au cœur de Mangily, près de Tuléar, Madagascar, où l'émerveillement et la magie se rencontrent dans un tableau vivant d'une beauté époustouflante. Ici, les majestueux baobabs, connus sous le nom de "Reniala," signifiant « mère de la forêt » en malgache, s'élèvent avec fierté, leurs troncs puissants et leurs branches tentaculaires embrassant le ciel d'une manière spectaculaire. Ces géants vénérés, témoins silencieux du passage du temps, offrent refuge à une multitude d'espèces, et leur silhouette emblématique se découpe avec grâce sur les panoramas arides et colorés de la région.</p>
+            <p>En vous aventurant dans ce havre de paix, laissez-vous envoûter par les doux murmures du vent et les chants mélodieux des oiseaux exotiques qui composent une symphonie apaisante, enveloppant chaque visiteur dans une atmosphère de sérénité. La flore, riche et variée, révèle des espèces endémiques, certaines n’éclosant que dans ce coin oublié du monde, offrant des explosions de couleurs vibrantes qui animent le sol et les cimes des arbres.</p>
+            <p>
+                À chaque pas, l'air embaume d'un parfum délicat de plantes aromatiques et de fleurs éclatantes, contrastant harmonieusement avec les paysages désertiques et les oasis verdoyantes qui surgissent comme des mirages. Les sentiers sinueux serpentent entre les baobabs, chaque tournant dévoilant des merveilles cachées d'une biodiversité exceptionnelle, faisant du parc Reniala un trésor écologique inestimable.
+            </p>
+            <p>
+                À la tombée du jour, l'horizon se pare de teintes dorées et pourpres, le soleil couchant enveloppant le parc d'une lumière magique, invitant à la contemplation et à la rêverie. Dans ce royaume où les Reniala, véritables mères de la forêt, règnent en maîtres, chaque pas est une promesse d’émerveillement, chaque instant une célébration de la vie dans toute sa splendeur. Venez vivre cette expérience inoubliable et laissez-vous séduire par la beauté sauvage de Reniala, un trésor de la nature qui gravera des souvenirs impérissables dans votre cœur.
+            </p>
+        </div>
+        <div class="col-md-6 col-12 text-center">
+            <owl-carousel-o [options]="carouselOptions" class="sticky-image">
+                <ng-container *ngFor="let image of images">
+                    <ng-template carouselSlide>
+                        <img [src]="image" alt="Image du parc" style="height: 500px;" class="img-fluid rounded">
+                    </ng-template>
+                </ng-container>
+            </owl-carousel-o>
+        </div>
+        
+
+
+
+    </div>
+
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancel</button>
+</mat-dialog-actions>
