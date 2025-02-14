@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package.json ./
 
 # Step 4: Install dependencies
-RUN npm install --legacy-peer-deps
+RUN npm install
 
 # Step 5: Copy the rest of the app files
 COPY . .
@@ -31,6 +31,5 @@ COPY --from=build /app/dist/ /usr/share/nginx/html
 # Step 9: Expose port 80
 EXPOSE 4200
 
-# Step 10: Start the Nginx server to serve the apps
+# Step 10: Start the Nginx server to serve the appss
 CMD ["nginx", "-g", "daemon off;"]
-
