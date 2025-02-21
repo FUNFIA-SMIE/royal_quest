@@ -1,10 +1,11 @@
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import {ChangeDetectionStrategy, Component} from '@angular/core';
+import { FooterComponent } from "../footer/footer.component";
 
 @Component({
   selector: 'app-accueil',
   standalone: true,
-  imports: [NgbCarouselModule],
+  imports: [NgbCarouselModule, FooterComponent],
   templateUrl: './accueil.component.html',
   styleUrl: './accueil.component.scss'
 })
