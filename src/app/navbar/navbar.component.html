@@ -22,31 +22,43 @@
     <div class="collapse navbar-collapse" id="navbarContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="">Casa</a>
+          <a class="nav-link" routerLink="/" routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }" aria-current="page"
+          >{{'navbar.Casa'|translate}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Conseil">Consigli di viaggio</a>
+          <a class="nav-link" routerLink="/Conseil" routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }" aria-current="page"
+          >{{'navbar.Consigli_di_viaggio'|translate}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Tours">I nostri tour </a>
+          <a class="nav-link" routerLink="/Tours" routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }" aria-current="page"
+          >{{'navbar.I_nostri_tour'|translate}} </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Parcs">I nostri parchi</a>
+          <a class="nav-link" routerLink="/Parcs" routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }" aria-current="page"
+          >{{'navbar.I_nostri_parchi'|translate}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Guide">Guida</a>
+          <a class="nav-link" routerLink="/Guide" routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }" aria-current="page"
+          >{{'navbar.Guida'|translate}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Location">Noleggio auto</a>
+          <a class="nav-link" routerLink="/Location" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" aria-current="page"
+          
+          >{{'navbar.Noleggio_auto'|translate}}</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Lingua
+            {{'navbar.Lingua'|translate}}
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#"><span class="flag-icon flag-icon-it"></span> Italien</a></li>
-            <li><a class="dropdown-item" href="#"><span class="flag-icon flag-icon-fr"></span> Français</a></li>
-            <li><a class="dropdown-item" href="#"><span class="flag-icon flag-icon-us"></span> English</a></li>
+            <li *ngFor="let laguage of ['ita','fr']">
+              <a class="dropdown-item" [ngClass]="{'active':multiLangService.languageSignal()===laguage}" (click)="toggleLanguage(laguage)" ><span class="flag-icon {{getLanguageIconClass(laguage)}}"></span> {{getLanguageName(laguage)}}</a>
+            </li>
           </ul>
         </li>
         

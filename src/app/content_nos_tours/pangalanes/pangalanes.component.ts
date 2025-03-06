@@ -1,14 +1,14 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { CommonModule } from '@angular/common'; 
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-pangalanes',
-  standalone: true,
-  imports: [NgbCarouselModule,CommonModule],
-  templateUrl: './pangalanes.component.html',
-  styleUrl: './pangalanes.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-pangalanes',
+    imports: [NgbCarouselModule, CommonModule,TranslateModule],
+    templateUrl: './pangalanes.component.html',
+    styleUrl: './pangalanes.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PangalanesComponent {
 	images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);

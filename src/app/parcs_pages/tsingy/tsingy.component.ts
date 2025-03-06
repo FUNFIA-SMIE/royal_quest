@@ -5,11 +5,10 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
-  selector: 'app-tsingy',
-  standalone: true,
-  imports: [MatButtonModule, MatDialogModule,CarouselModule,CommonModule],
-  templateUrl: './tsingy.component.html',
-  styleUrl: './tsingy.component.scss'
+    selector: 'app-tsingy',
+    imports: [MatButtonModule, MatDialogModule, CarouselModule, CommonModule],
+    templateUrl: './tsingy.component.html',
+    styleUrl: './tsingy.component.scss'
 })
 export class TsingyComponent {
   images = [

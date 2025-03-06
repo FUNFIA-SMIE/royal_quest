@@ -6,11 +6,10 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-andasibe',
-  standalone: true,
-  imports: [MatButtonModule, MatDialogModule,CarouselModule,CommonModule],
-  templateUrl: './andasibe.component.html',
-  styleUrl: './andasibe.component.scss'
+    selector: 'app-andasibe',
+    imports: [MatButtonModule, MatDialogModule, CarouselModule, CommonModule],
+    templateUrl: './andasibe.component.html',
+    styleUrl: './andasibe.component.scss'
 })
 export class AndasibeComponent {
 

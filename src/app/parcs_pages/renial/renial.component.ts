@@ -5,11 +5,10 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
-  selector: 'app-renial',
-  standalone: true,
-  imports: [MatButtonModule, MatDialogModule,CarouselModule,CommonModule],
-  templateUrl: './renial.component.html',
-  styleUrl: './renial.component.scss'
+    selector: 'app-renial',
+    imports: [MatButtonModule, MatDialogModule, CarouselModule, CommonModule],
+    templateUrl: './renial.component.html',
+    styleUrl: './renial.component.scss'
 })
 export class RenialComponent {
   images = [

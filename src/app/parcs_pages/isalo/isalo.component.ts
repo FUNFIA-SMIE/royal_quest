@@ -5,11 +5,10 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
-  selector: 'app-isalo',
-  standalone: true,
-  imports: [MatButtonModule, MatDialogModule,CarouselModule,CommonModule],
-  templateUrl: './isalo.component.html',
-  styleUrl: './isalo.component.scss'
+    selector: 'app-isalo',
+    imports: [MatButtonModule, MatDialogModule, CarouselModule, CommonModule],
+    templateUrl: './isalo.component.html',
+    styleUrl: './isalo.component.scss'
 })
 export class IsaloComponent {
   images = [

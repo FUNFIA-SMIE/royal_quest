@@ -5,11 +5,10 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
-  selector: 'app-anja',
-  standalone: true,
-  imports: [MatButtonModule, MatDialogModule,CarouselModule,CommonModule],
-  templateUrl: './anja.component.html',
-  styleUrl: './anja.component.scss'
+    selector: 'app-anja',
+    imports: [MatButtonModule, MatDialogModule, CarouselModule, CommonModule],
+    templateUrl: './anja.component.html',
+    styleUrl: './anja.component.scss'
 })
 export class AnjaComponent {
   images = [

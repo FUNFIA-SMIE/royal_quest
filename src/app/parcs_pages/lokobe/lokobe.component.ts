@@ -5,11 +5,10 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
-  selector: 'app-lokobe',
-  standalone: true,
-  imports: [MatButtonModule, MatDialogModule,CarouselModule,CommonModule],
-  templateUrl: './lokobe.component.html',
-  styleUrl: './lokobe.component.scss'
+    selector: 'app-lokobe',
+    imports: [MatButtonModule, MatDialogModule, CarouselModule, CommonModule],
+    templateUrl: './lokobe.component.html',
+    styleUrl: './lokobe.component.scss'
 })
 export class LokobeComponent {
   images = [

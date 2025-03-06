@@ -5,11 +5,10 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
-  selector: 'app-ranomafana',
-  standalone: true,
-  imports: [MatButtonModule, MatDialogModule,CarouselModule,CommonModule],
-  templateUrl: './ranomafana.component.html',
-  styleUrl: './ranomafana.component.scss'
+    selector: 'app-ranomafana',
+    imports: [MatButtonModule, MatDialogModule, CarouselModule, CommonModule],
+    templateUrl: './ranomafana.component.html',
+    styleUrl: './ranomafana.component.scss'
 })
 export class RanomafanaComponent {
 

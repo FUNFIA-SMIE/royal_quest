@@ -2,11 +2,10 @@ import { Component } from '@angular/core';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { CommonModule } from '@angular/common';
 @Component({
-  selector: 'app-nosy-be',
-  standalone: true,
-	imports: [NgbCarouselModule,CommonModule],
-  templateUrl: './nosy-be.component.html',
-  styleUrl: './nosy-be.component.scss'
+    selector: 'app-nosy-be',
+    imports: [NgbCarouselModule, CommonModule],
+    templateUrl: './nosy-be.component.html',
+    styleUrl: './nosy-be.component.scss'
 })
 export class NosyBEComponent {
   slides = [

@@ -3,11 +3,10 @@ import { Component } from '@angular/core';
 import { NgbCarouselConfig, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-rakoba',
-  standalone: true,
-  imports: [CommonModule,NgbCarouselModule],
-  templateUrl: './rakoba.component.html',
-  styleUrl: './rakoba.component.scss'
+    selector: 'app-rakoba',
+    imports: [CommonModule, NgbCarouselModule],
+    templateUrl: './rakoba.component.html',
+    styleUrl: './rakoba.component.scss'
 })
 export class RakobaComponent {
   slides = [

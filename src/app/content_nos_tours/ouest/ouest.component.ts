@@ -2,12 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { TranslateModule } from '@ngx-translate/core';
 @Component({
-  selector: 'app-ouest',
-  standalone: true,
-  imports: [CommonModule,NgbCarouselModule],
-  templateUrl: './ouest.component.html',
-  styleUrl: './ouest.component.scss'
+    selector: 'app-ouest',
+    imports: [CommonModule, NgbCarouselModule,TranslateModule],
+    templateUrl: './ouest.component.html',
+    styleUrl: './ouest.component.scss'
 })
 export class OuestComponent {
   slides = [

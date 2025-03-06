@@ -14,13 +14,11 @@ import { RenialComponent } from '../parcs_pages/renial/renial.component';
 import { LokobeComponent } from '../parcs_pages/lokobe/lokobe.component';
 
 @Component({
-  selector: 'app-nos-parcs',
-  standalone: true,
-  imports: [NgbCarouselModule, CommonModule, CarouselModule, MatIconModule],
-  templateUrl: './nos-parcs.component.html',
-  styleUrl: './nos-parcs.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush,
-
+    selector: 'app-nos-parcs',
+    imports: [NgbCarouselModule, CommonModule, CarouselModule, MatIconModule],
+    templateUrl: './nos-parcs.component.html',
+    styleUrl: './nos-parcs.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NosParcsComponent {
 

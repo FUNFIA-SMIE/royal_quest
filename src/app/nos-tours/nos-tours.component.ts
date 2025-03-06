@@ -9,13 +9,13 @@ import {
   MatDialogTitle,
 } from '@angular/material/dialog';
 import { PangalanesComponent } from '../content_nos_tours/pangalanes/pangalanes.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-nos-tours',
-  standalone: true,
-  imports: [],
-  templateUrl: './nos-tours.component.html',
-  styleUrl: './nos-tours.component.scss'
+    selector: 'app-nos-tours',
+    imports: [TranslateModule],
+    templateUrl: './nos-tours.component.html',
+    styleUrl: './nos-tours.component.scss'
 })
 export class NosToursComponent {
   readonly dialog = inject(MatDialog);
