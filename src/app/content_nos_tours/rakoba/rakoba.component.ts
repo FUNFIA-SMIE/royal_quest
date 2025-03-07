@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { NgbCarouselConfig, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-rakoba',
-    imports: [CommonModule, NgbCarouselModule],
+    imports: [CommonModule, NgbCarouselModule,TranslateModule],
     templateUrl: './rakoba.component.html',
     styleUrl: './rakoba.component.scss'
 })

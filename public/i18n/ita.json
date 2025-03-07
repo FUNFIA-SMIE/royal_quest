@@ -78,5 +78,76 @@
             "p6":"Questo viaggio, tra storia e natura, celebra la grandezza di Rakobà e la ricchezza dell'ovest malgascio. È una terra dove leggenda e bellezza si incontrano per offrire un'esperienza indimenticabile, un'avventura che incanta l'anima e risveglia i sensi. Venite a seguire le tracce del re e lasciatevi sedurre dalla magia eterna del Madagascar, un regno dove ogni istante è una celebrazione della vita."
         }
 
+    },
+
+    "Parcs":{
+        "Ulteriori_informazioni":"Ulteriori informazioni",
+        "Andasibe":{
+            "content":{
+                "p1":"Nel cuore del Parco Nazionale di Andasibe, vero santuario di biodiversità, i visitatori sono invitati a vivere un'esperienza indimenticabile, dove la natura si rivela in tutto il suo splendore. Immaginatevi ad ascoltare i canti incantevoli dell'indri, il più grande dei lemuri, i cui echi risuonano attraverso la foresta densa, creando una melodia che tocca l'anima. I lemuri, come il sifaka dai movimenti aggraziati e il lemure dalla coda ad anelli, aggiungono un tocco di magia a questa avventura, trasportandovi in un mondo fiabesco. Percorrendo i sentieri tortuosi, avrete la fortuna di avvistare camaleonti dai colori vivaci, rane dai motivi affascinanti e una varietà di uccelli esotici, come il vanga di Pollen, che stupiscono per la loro bellezza mozzafiato.",
+                "p2":"Nelle vicinanze, la riserva di Vakona offre un incontro ancora più intimo con la fauna malgascia, dove potrete avvicinarvi ai lemuri in libertà sull'isola dei lemuri, un'esperienza toccante che permette di interagire con queste creature curiose e socievoli. Le mangrovie e i laghi circostanti ospitano anche una varietà di uccelli acquatici e rettili, rendendo questa regione un vero paradiso per gli amanti della natura. In questo scenario incantevole, ogni incontro con la fauna è un invito a scoprire la ricchezza e la fragilità dell'ecosistema malgascio, un promemoria toccante che la preservazione di questa bellezza naturale è nelle vostre mani. Venite a immergervi in questo mondo straordinario, dove ogni istante è una celebrazione della vita selvaggia."
+            }
+        },
+        "Ranomafana":{
+            "content":{
+                "p1":"Nel cuore del Parco Nazionale di Ranomafana, un vero rifugio di biodiversità, i visitatori sono immersi in un mondo vibrante di vita, dove la foresta pluviale brulica di animali affascinanti dalle storie avvincenti. Tra i gioielli di questa natura esuberante, il famoso lemure dorato, spesso chiamato \"lemure con la cresta\", si distingue per il suo manto scintillante sotto il sole, mentre il sifaka, con i suoi salti aggraziati, incanta tutti con acrobazie mozzafiato. Esplorando i sentieri tortuosi, avrete anche la fortuna di incontrare l'insolito aye-aye, un lemure notturno così singolare, il cui dito lungo e delicato è uno strumento di precisione per scovare le larve nascoste nei tronchi degli alberi.",
+                "p2":"Ad ogni angolo, camaleonti multicolori e rane endemiche dai motivi sorprendenti si nascondono tra le foglie, aggiungendo un tocco di magia a questa avventura sensoriale. Sopra di voi, una sinfonia di uccelli esotici, come il vanga dalla testa blu e il pigliamosche del Madagascar, arricchisce il paesaggio con i loro canti melodiosi e piumaggi abbaglianti, creando un'atmosfera fiabesca. Ogni passo sui sentieri di Ranomafana rivela una nuova sfaccettatura di questo ecosistema straordinario, rendendo questo luogo una destinazione imperdibile per gli appassionati di natura desiderosi di scoprire la magia nascosta della fauna malgascia in un contesto naturale mozzafiato. Immergetevi in questo santuario di vita selvaggia e lasciatevi incantare dai tesori nascosti di questo paradiso terrestre."
+            }
+        },
+        "Anja ":{
+            "content":{
+                "p1":"Nel Parco Anja Ambalavao, un tesoro naturale del Madagascar, i visitatori sono accolti da un paesaggio mozzafiato dove la fauna locale brilla in modo abbagliante. Qui, i lemuri, veri gioielli di questo santuario, si muovono con un'agilità affascinante: il lemure dalla coda ad anelli, con la sua lunga coda striata, cattura tutti gli sguardi oscillando gioiosamente da un albero all'altro.",
+                "p2":"Lungo i sentieri ombreggiati, camaleonti dai colori vivaci e gechi dai motivi esotici si fondono con grazia nella vegetazione, aggiungendo un tocco di mistero a questa natura vibrante. I canti melodiosi degli uccelli esotici, come il cucal e il vanga nero, riempiono l'aria di una musica rilassante, creando un'atmosfera magica in questo angolo di paradiso. Ogni passo che fai in questo santuario di biodiversità è un invito a scoprire la bellezza incantevole del Madagascar, rendendo il Parco Anja Ambalavao una destinazione imperdibile per chi cerca avventure indimenticabili e ricordi indelebili nel cuore. Vivi un'esperienza immersiva e lasciati sedurre dalla magia di questa natura incontaminata, dove ogni istante è una celebrazione della vita selvaggia."
+            }
+        },
+        "Isalo ":{
+            "content":{
+                "p1":"Nel cuore del Parco Isalo in Madagascar, si apre un vero paradiso naturale, dove ogni istante è un invito alla meraviglia. Questo santuario incantevole svela una bellezza mozzafiato: formazioni rocciose dai contorni maestosi, scolpite dal soffio del tempo, si ergono con fierezza sotto un cielo di un blu intenso. I lemuri, gioielli viventi di questa terra, saltano con grazia da un ramo all'altro, i loro richiami gioiosi creando una melodia che risuona nell'aria calda e vibrante.",
+                "p2":"Le piscine naturali, dalle acque turchesi scintillanti, brillano come gioielli incastonati in un paesaggio arido, invitando i viaggiatori a immergersi nella loro freschezza benefica e ad abbandonarsi alla quiete. La famosa finestra di Isalo, una scultura unica modellata dalla natura, offre un panorama mozzafiato: al tramonto, le colline si illuminano di sfumature arancioni e viola, dipingendo un quadro vivente che celebra la magnificenza di questo santuario.",
+                "p3":"In questo rifugio selvaggio, ogni pianta endemica, ogni rilievo grandioso, racconta una storia antica e affascinante, unendo l'uomo e la natura in un'armonia meravigliosa. Venite a scoprire questa esperienza indimenticabile, dove avventura e serenità si incontrano, promettendovi ricordi incisi per sempre nel vostro cuore."
+            }
+        },
+        "Tsingy ":{
+            "content":{
+                "p1":"Nel Parco Tsingy del Madagascar, vi attende un vero santuario di bellezza e meraviglia, dove la fauna e la flora si mescolano in una danza incantevole nel cuore di paesaggi spettacolari. I Tsingy, queste formazioni calcaree affilate, si ergono come frecce maestose verso il cielo, formando un labirinto di rocce misteriose e affascinanti che risvegliano la curiosità di ogni esploratore. Avventurandovi in questo regno incantato, il canto melodioso degli uccelli multicolori e i richiami gioiosi dei lemuri arricchiscono l'atmosfera selvaggia, creando una sinfonia naturale che nutre l'anima.",
+                "p2":"La vegetazione lussureggiante e tenace prospera tra le fessure dei Tsingy, aggiungendo tocchi di verde brillante a questo quadro minerale affascinante. Percorrendo i sentieri tortuosi, avrete la gioia di scoprire specie endemiche rare che non si trovano in nessun'altra parte del mondo, godendo di panorami mozzafiato sui canyon circostanti che si estendono all'infinito. Il profumo inebriante delle piante aromatiche fluttua nell'aria calda, mentre il vento leggero accarezza il vostro viso, offrendovi una sensazione di libertà e meraviglia a ogni istante.",
+                "p3":"In questo luogo straordinario, ogni passo è un invito alla scoperta, ogni momento diventa una celebrazione della magnificenza e della diversità della natura, dove l'uomo e l'ambiente si uniscono in un'armonia affascinante. Venite a vivere questa esperienza unica e lasciatevi incantare dalla magia dei Tsingy, un tesoro di biodiversità e paesaggi che segnerà il vostro cuore per sempre."
+            }
+        },
+        "Reniala ":{
+            "content":{
+                "p1":"Immergetevi nel parco Reniala, un vero santuario della natura nel cuore di Mangily, vicino a Tuléar, Madagascar, dove meraviglia e magia si incontrano in un quadro vivente di una bellezza mozzafiato. Qui, i maestosi baobab, conosciuti come \"Reniala,\" che significa \"madre della foresta\" in malgascio, si ergono con fierezza, i loro tronchi possenti e i rami tentacolari abbracciano il cielo in modo spettacolare. Questi giganti venerati, testimoni silenziosi del passare del tempo, offrono rifugio a una moltitudine di specie, e la loro silhouette iconica si staglia con grazia sui panorami aridi e colorati della regione.",
+                "p2":"Avventurandovi in questo rifugio di pace, lasciatevi incantare dai dolci sussurri del vento e dai canti melodiosi degli uccelli esotici che compongono una sinfonia rilassante, avvolgendo ogni visitatore in un'atmosfera di serenità. La flora, ricca e variegata, rivela specie endemiche, alcune delle quali fioriscono solo in questo angolo dimenticato del mondo, offrendo esplosioni di colori vibranti che animano il suolo e le cime degli alberi.",
+                "p3":"Ad ogni passo, l'aria è pervasa da un delicato profumo di piante aromatiche e fiori sgargianti, contrastando armoniosamente con i paesaggi desertici e le oasi verdeggianti che emergono come miraggi. I sentieri tortuosi serpeggiano tra i baobab, ogni curva svela meraviglie nascoste di una biodiversità eccezionale, rendendo il parco Reniala un tesoro ecologico inestimabile.",
+                "p4":"Al calar del giorno, l'orizzonte si tinge di sfumature dorate e porpora, il sole al tramonto avvolge il parco di una luce magica, invitando alla contemplazione e al sogno. In questo regno dove i Reniala, vere madri della foresta, regnano sovrani, ogni passo è una promessa di meraviglia, ogni istante una celebrazione della vita in tutta la sua splendore. Venite a vivere questa esperienza indimenticabile e lasciatevi sedurre dalla bellezza selvaggia di Reniala, un tesoro della natura che inciderà ricordi indelebili nel vostro cuore."
+            }
+        },
+        "Lokobe ":{
+            "content":{
+                "p1":"Nel Parco Nazionale di Lokobe, a Nosy Be, si apre un mondo preservato e incantevole, un vero santuario dove la bellezza ineguagliabile della fauna e della flora si dispiega in uno scrigno di natura lussureggiante. Entrando in questo regno tropicale, sarete accolti da una sinfonia di suoni che incanta i sensi: il canto degli uccelli esotici si eleva nella canopia, mentre i lemuri giocosi saltellano gioiosamente tra i rami, infondendo vita vibrante a questo quadro verdeggiante.",
+                "p2":"I sentieri tortuosi invitano all'esplorazione attraverso questa giungla densa, dove alberi maestosi, drappeggiati di liane e muschio, formano volte naturali che filtrano la luce del sole in bagliori d'oro e verde. La flora, ricca e variegata, rivela un tesoro di specie endemiche, dalle orchidee sgargianti alle palme maestose, formando una tavolozza di colori sorprendenti che meraviglia lo sguardo e riscalda il cuore. Ogni respiro vi porta più a fondo in questo regno incantato, impregnato dal profumo inebriante delle piante aromatiche, invitandovi a esplorare ancora più profondamente.",
+                "p3":"Durante la vostra passeggiata, i fiumi scintillanti e le pozze tranquille creano rifugi di pace, dove la vita acquatica risveglia la curiosità: camaleonti si insinuano delicatamente tra le foglie e rane dai colori vivaci prosperano nel loro habitat. Ad ogni angolo, si presenta una nuova meraviglia, dagli uccelli dai piumaggi sgargianti agli insetti dalle forme insolite, testimoniando la ricchezza incredibile della biodiversità che questo parco ha da offrire.",
+                "p4":"Al calar della notte, la foresta si risveglia con una nuova magia; il crepuscolo fa risuonare il canto delle rane e il fruscio degli insetti, trasformando il parco in una scena vivente dove ogni suono racconta una storia unica. Il Parco Nazionale di Lokobe non è solo una destinazione; è un'immersione profonda in un mondo autentico, un luogo dove la bellezza selvaggia del Madagascar vi circonda e si imprime per sempre nella vostra memoria. Venite a scoprire questi paesaggi incantevoli e lasciatevi trasportare dallo spirito vibrante della natura in tutto il suo splendore."
+            }
+        }
+    },
+
+    "Conseil":{
+        "Preparativi":"Préparatifs",
+        "h1":"Consiglio di viaggio",
+        "p1":"Il Madagascar è una destinazione ideale per gli amanti dell'avventura, offrendo paesaggi vari, biodiversità unica e ricca cultura. Ecco alcune informazioni utili per preparare il tuo viaggio:",
+        "h2_1":"Clima e stagioni:",
+        "li_1":"La stagione fresca e secca va da maggio a ottobre. Questo è il momento ideale per esplorare il paese, poiché la maggior parte dei siti e delle strade sono accessibili.",
+        "li_2":"La stagione calda e piovosa va da novembre ad aprile. Anche se alcune strade diventano impraticabili a causa delle piogge, questo è il periodo in cui la natura è più rigogliosa, con paesaggi verdi. Questa è anche la stagione in cui molti animali partoriscono e sono più visibili.",
+        "h2_2":"Strade e spostamenti :",
+        "p2":" Il Madagascar è un paese d'avventura e le strade, sebbene pittoresche, possono a volte essere difficili. I viaggi in taxi-brousse o in 4x4 sono frequenti, in particolare per raggiungere le regioni remote. Assicurati di pianificare i tuoi spostamenti in anticipo, soprattutto durante la stagione delle piogge.",
+        "l1_3":"Abbigliamento leggero e impermeabile,",
+        "l1_4":"Un kit di pronto soccorso,",
+        "l1_5":"Repellenti anti-zanzare,",
+        "l1_6":"Scarpe adatte per escursioni.",
+        "h2_3":"Consigli pratici :",
+        "p3":"In caso di dubbio su un itinerario, un'attività o qualsiasi altro aspetto del tuo viaggio, non esitare a contattarci. Siamo qui per aiutarti a organizzare un soggiorno indimenticabile e sicuro."
     }
+
+
 }

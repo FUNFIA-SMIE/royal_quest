@@ -18,12 +18,6 @@ import { TranslateModule } from '@ngx-translate/core';
     styleUrl: './nos-tours.component.scss'
 })
 export class NosToursComponent {
-  readonly dialog = inject(MatDialog);
 
-  openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
-    this.dialog.open(PangalanesComponent, {
-      enterAnimationDuration,
-      exitAnimationDuration,
-    });
-  }
+
 }

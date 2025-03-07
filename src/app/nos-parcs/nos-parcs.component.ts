@@ -12,10 +12,17 @@ import { IsaloComponent } from '../parcs_pages/isalo/isalo.component';
 import { TsingyComponent } from '../parcs_pages/tsingy/tsingy.component';
 import { RenialComponent } from '../parcs_pages/renial/renial.component';
 import { LokobeComponent } from '../parcs_pages/lokobe/lokobe.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-nos-parcs',
-    imports: [NgbCarouselModule, CommonModule, CarouselModule, MatIconModule],
+    imports: [
+      NgbCarouselModule, 
+      CommonModule, 
+      CarouselModule, 
+      MatIconModule,
+      TranslateModule
+    ],
     templateUrl: './nos-parcs.component.html',
     styleUrl: './nos-parcs.component.scss',
     changeDetection: ChangeDetectionStrategy.OnPush

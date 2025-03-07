@@ -4,10 +4,11 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-andasibe',
-    imports: [MatButtonModule, MatDialogModule, CarouselModule, CommonModule],
+    imports: [MatButtonModule, MatDialogModule, CarouselModule, CommonModule,TranslateModule],
     templateUrl: './andasibe.component.html',
     styleUrl: './andasibe.component.scss'
 })

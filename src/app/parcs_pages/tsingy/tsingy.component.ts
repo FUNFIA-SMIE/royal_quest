@@ -2,11 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
+import { TranslateModule } from '@ngx-translate/core';
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
     selector: 'app-tsingy',
-    imports: [MatButtonModule, MatDialogModule, CarouselModule, CommonModule],
+    imports: [TranslateModule,MatButtonModule, MatDialogModule, CarouselModule, CommonModule],
     templateUrl: './tsingy.component.html',
     styleUrl: './tsingy.component.scss'
 })

@@ -1,9 +1,10 @@
 import { animate, style, transition, trigger } from '@angular/animations';
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-conseil-du-voyage',
-    imports: [],
+    imports: [TranslateModule],
     templateUrl: './conseil-du-voyage.component.html',
     styleUrl: './conseil-du-voyage.component.scss',
     animations: [
