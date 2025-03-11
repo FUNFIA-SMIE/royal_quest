@@ -1,99 +1,142 @@
 <!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="container my-5">
+<div class=" bg-light my-5">
 
-    <footer class="text-white text-center text-lg-start" style="background-color: #23242a;">
-      <!-- Grid container -->
-      <div class="container p-4">
-        <!--Grid row-->
-        <div class="row mt-4">
-          <!--Grid column-->
-          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-4">About company</h5>
-  
-            <p>
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-              voluptatum deleniti atque corrupti.
-            </p>
-  
-            <p>
-              Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
-              molestias.
-            </p>
-  
-            <div class="mt-4">
-              <!-- Facebook -->
-              <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-facebook-f"></i></a>
-              <!-- Dribbble -->
-              <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-dribbble"></i></a>
-              <!-- Twitter -->
-              <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-twitter"></i></a>
-              <!-- Google + -->
-              <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-google-plus-g"></i></a>
-              <!-- Linkedin -->
-            </div>
-          </div>
-          <!--Grid column-->
-  
-          <!--Grid column-->
-          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
-  
-            <div class="form-outline form-white mb-4">
-              <input type="text" id="formControlLg" class="form-control form-control-lg">
-              <label class="form-label" for="formControlLg" style="margin-left: 0px;">Search</label>
-            <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 48.8px;"></div><div class="form-notch-trailing"></div></div></div>
-  
-            <ul class="fa-ul" style="margin-left: 1.65em;">
-              <li class="mb-3">
-                <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">New York, NY 10012, US</span>
-              </li>
-              <li class="mb-3">
-                <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">infoexample.com</span>
-              </li>
-              <li class="mb-3">
-                <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 01 234 567 88</span>
-              </li>
-              <li class="mb-3">
-                <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">+ 01 234 567 89</span>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
-  
-          <!--Grid column-->
-          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-4">Opening hours</h5>
-  
-            <table class="table text-center text-white">
-              <tbody class="font-weight-normal">
-                <tr>
-                  <td>Mon - Thu:</td>
-                  <td>8am - 9pm</td>
-                </tr>
-                <tr>
-                  <td>Fri - Sat:</td>
-                  <td>8am - 1am</td>
-                </tr>
-                <tr>
-                  <td>Sunday:</td>
-                  <td>9am - 10pm</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <!--Grid column-->
+  <footer class="bg-light  text-center text-lg-start">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row mt-4">
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">CONTACTEZ-NOUS</h5>
+
+          <ul class="fa-ul" style="margin-left: 1.65em;">
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Royal Quest Adventure
+                Madagascar</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-envelope"></i></span><span
+                class="ms-2">royaladventure&#64;outlook.fr</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+261 34 67 992 13</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fab fa-whatsapp"></i></span><span class="ms-2">+261 34 67 992 13</span>
+            </li>
+          </ul>
+
         </div>
-        <!--Grid row-->
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+
+          <h5 class="text-uppercase mb-4 pb-1">SUIVEZ-NOUS</h5>
+
+          <div class="mt-4">
+            <!-- Facebook -->
+            <a type="button" href="https://www.facebook.com/profile.php?id=61571876663226"
+              class="btn btn-floating btn-primary btn-lg mx-2"><i class="fab fa-facebook-f"></i></a>
+            <!-- Dribbble -->
+            <a type="button" (click)="redirectToWhatsApp('+261349601403')"
+              class="btn btn-floating btn-success btn-lg"><i class="fab fa-whatsapp"></i></a>
+            <!-- Google + -->
+            <a type="button" class="btn btn-floating btn-danger btn-lg mx-2"><i class="fab fa-google"></i></a>
+            <!-- Linkedin -->
+            <a type="button" class="btn btn-floating btn-primary btn-lg"><i class="fab fa-linkedin"></i></a>
+
+          </div>
+
+          <div class="my-3">
+
+          </div>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="ml-3 col-lg-4 col-md-6 mb-4 mb-md-0">
+          <div class="row justify-content-center">
+
+              <!--Form with header-->
+
+              <form action="mail.php" method="post">
+                <div class="shadow-sm card rounded-0">
+                  <div class="card-header p-0">
+                    <div class="bg-info text-white text-center py-2">
+                      <h3><i class="fa fa-envelope"></i> Contactez-nous</h3>
+                    </div>
+                  </div>
+                  <div class="card-body p-3">
+
+                    <!--Body-->
+                    <div class="form-group">
+                      <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
+                        </div>
+                        <input type="text" class="form-control" id="nombre" name="nombre"
+                          placeholder="Nom et prénom" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
+                        </div>
+                        <input type="email" class="form-control" id="nombre" name="email"
+                          placeholder="mail@gmail.com" required>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
+                        </div>
+                        <textarea class="form-control" placeholder="Envoyez-nous votre message" required></textarea>
+                      </div>
+                    </div>
+
+                    <div class="text-center">
+                      <input type="submit" value="Envoyer" class="btn btn-info btn-block rounded-0 py-2">
+                    </div>
+                  </div>
+
+                </div>
+              </form>
+              <!--Form with header-->
+
+          </div>
+
+          <div id="fb-root"></div>
+          <script async defer crossorigin="anonymous"
+            src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v17.0">
+            </script>
+
+          <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=61571876663226" data-tabs="timeline"
+            data-width="500" data-height="600" data-small-header="false" data-adapt-container-width="true"
+            data-hide-cover="false" data-show-facepile="true">
+          </div>
+
+
+
+        </div>
+        <!--Grid column-->
       </div>
-      <!-- Grid container -->
-  
-      <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2020 Copyright:
-        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-      </div>
-      <!-- Copyright -->
-    </footer>
-    
-  </div>
-  <!-- End of .container -->
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3">
+      © 2025 Copyright:
+      <a class="" href="https://www.facebook.com/profile.php?id=100008473697518">Naina Andriamihoatra</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+</div>
+<!-- End of .container -->

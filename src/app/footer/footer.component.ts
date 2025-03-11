@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
     styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-
+    redirectToWhatsApp(phoneNumber: string) {
+        const url = `https://wa.me/${phoneNumber}`;
+        window.open(url, '_blank');
+      }
+      
 }
