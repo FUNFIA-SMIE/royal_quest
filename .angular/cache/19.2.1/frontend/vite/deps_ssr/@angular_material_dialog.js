@@ -1,5 +1,15 @@
 import { createRequire } from 'module';const require = createRequire(import.meta.url);
 import {
+  animate,
+  animateChild,
+  group,
+  query,
+  state,
+  style,
+  transition,
+  trigger
+} from "./chunk-NSCAFHVK.js";
+import {
   A11yModule,
   ESCAPE,
   FocusMonitor,
@@ -23,16 +33,6 @@ import {
   BidiModule,
   Directionality
 } from "./chunk-TL5NRYDA.js";
-import {
-  animate,
-  animateChild,
-  group,
-  query,
-  state,
-  style,
-  transition,
-  trigger
-} from "./chunk-NSCAFHVK.js";
 import {
   DOCUMENT,
   Location

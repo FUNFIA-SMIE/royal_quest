@@ -73,3 +73,18 @@ li{
   line-height: 1.5;
 
 }
+
+/* Ajustement pour les petits écrans */
+@media screen and (max-width: 964px) {
+  .typing-container {
+    font-size: 30px; /* Augmente la taille sur mobile */
+    border-right: 2px solid white; /* Réduit la bordure */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .typing-container {
+    font-size: 18px; /* Encore plus grand pour les petits écrans */
+    border-right: 1px solid white;
+  }
+}

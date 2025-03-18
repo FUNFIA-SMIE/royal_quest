@@ -1,10 +1,10 @@
 import {
   BidiModule
-} from "./chunk-NOU4JAIF.js";
+} from "./chunk-JWRYXUNI.js";
 import {
   DOCUMENT,
   isPlatformBrowser
-} from "./chunk-U5JRIZRT.js";
+} from "./chunk-XD7UTQYW.js";
 import {
   ANIMATION_MODULE_TYPE,
   APP_ID,
@@ -34,8 +34,6 @@ import {
   Version,
   ViewChild,
   ViewEncapsulation,
-  __spreadProps,
-  __spreadValues,
   afterNextRender,
   booleanAttribute,
   combineLatest,
@@ -81,30 +79,11 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate1,
   ɵɵviewQuery
-} from "./chunk-6RI6K66Q.js";
-
-// node_modules/@angular/cdk/fesm2022/coercion.mjs
-function coerceNumberProperty(value, fallbackValue = 0) {
-  if (_isNumberValue(value)) {
-    return Number(value);
-  }
-  return arguments.length === 2 ? fallbackValue : 0;
-}
-function _isNumberValue(value) {
-  return !isNaN(parseFloat(value)) && !isNaN(Number(value));
-}
-function coerceArray(value) {
-  return Array.isArray(value) ? value : [value];
-}
-function coerceCssPixelValue(value) {
-  if (value == null) {
-    return "";
-  }
-  return typeof value === "string" ? value : `${value}px`;
-}
-function coerceElement(elementOrRef) {
-  return elementOrRef instanceof ElementRef ? elementOrRef.nativeElement : elementOrRef;
-}
+} from "./chunk-L6G67PK5.js";
+import {
+  __spreadProps,
+  __spreadValues
+} from "./chunk-WDMUDEB6.js";
 
 // node_modules/@angular/cdk/fesm2022/platform.mjs
 var hasV8BreakIterator;
@@ -305,6 +284,29 @@ function hasModifierKey(event, ...modifiers) {
     return modifiers.some((modifier) => event[modifier]);
   }
   return event.altKey || event.shiftKey || event.ctrlKey || event.metaKey;
+}
+
+// node_modules/@angular/cdk/fesm2022/coercion.mjs
+function coerceNumberProperty(value, fallbackValue = 0) {
+  if (_isNumberValue(value)) {
+    return Number(value);
+  }
+  return arguments.length === 2 ? fallbackValue : 0;
+}
+function _isNumberValue(value) {
+  return !isNaN(parseFloat(value)) && !isNaN(Number(value));
+}
+function coerceArray(value) {
+  return Array.isArray(value) ? value : [value];
+}
+function coerceCssPixelValue(value) {
+  if (value == null) {
+    return "";
+  }
+  return typeof value === "string" ? value : `${value}px`;
+}
+function coerceElement(elementOrRef) {
+  return elementOrRef instanceof ElementRef ? elementOrRef.nativeElement : elementOrRef;
 }
 
 // node_modules/@angular/cdk/fesm2022/coercion/private.mjs
@@ -4902,10 +4904,6 @@ var _MatInternalFormField = class __MatInternalFormField {
 })();
 
 export {
-  coerceNumberProperty,
-  coerceArray,
-  coerceCssPixelValue,
-  coerceElement,
   Platform,
   RtlScrollAxisType,
   supportsScrollBehavior,
@@ -4915,6 +4913,10 @@ export {
   _isTestEnvironment,
   ESCAPE,
   hasModifierKey,
+  coerceNumberProperty,
+  coerceArray,
+  coerceCssPixelValue,
+  coerceElement,
   InteractivityChecker,
   FocusTrapFactory,
   FocusMonitor,
@@ -4923,4 +4925,4 @@ export {
   MatRippleModule,
   MatRippleLoader
 };
-//# sourceMappingURL=chunk-P3L7AFNE.js.map
+//# sourceMappingURL=chunk-ZDAPTSY2.js.map

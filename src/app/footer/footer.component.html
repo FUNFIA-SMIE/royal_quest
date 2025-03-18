@@ -45,7 +45,9 @@
             <!-- Google + -->
             <a type="button" class="btn btn-floating btn-danger btn-lg mx-2"><i class="fab fa-google"></i></a>
             <!-- Linkedin -->
-            <a type="button" class="btn btn-floating btn-primary btn-lg"><i class="fab fa-linkedin"></i></a>
+            <a type="button"
+              href="https://www.linkedin.com/in/royal-adventure-b41b54348/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="btn btn-floating btn-primary btn-lg"><i class="fab fa-linkedin"></i></a>
 
           </div>
 
@@ -59,56 +61,30 @@
         <!--Grid column-->
         <div class="ml-3 col-lg-4 col-md-6 mb-4 mb-md-0">
           <div class="row justify-content-center">
+            <h5 class="text-uppercase mb-4 pb-1">ENVOYEZ-NOUS DES MESSAGES</h5>
 
-              <!--Form with header-->
 
-              <form action="mail.php" method="post">
-                <div class="shadow-sm card rounded-0">
-                  <div class="card-header p-0">
-                    <div class="bg-info text-white text-center py-2">
-                      <h3><i class="fa fa-envelope"></i> Contactez-nous</h3>
-                    </div>
-                  </div>
-                  <div class="card-body p-3">
+            <form (submit)="sendEmail()" class="needs-validation" novalidate>
+              <div class="form-floating mb-3">
+                <input type="text" id="name" placeholder="Nom" class="form-control" [(ngModel)]="emailData.from_name"
+                  name="from_name" required>
+                <label for="name">Nom</label>
+              </div>
 
-                    <!--Body-->
-                    <div class="form-group">
-                      <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                          <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
-                        </div>
-                        <input type="text" class="form-control" id="nombre" name="nombre"
-                          placeholder="Nom et prénom" required>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                          <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
-                        </div>
-                        <input type="email" class="form-control" id="nombre" name="email"
-                          placeholder="mail@gmail.com" required>
-                      </div>
-                    </div>
+              <div class="form-floating mb-3">
+                <input type="email" id="email" placeholder="Email" class="form-control" [(ngModel)]="emailData.reply_to"
+                  name="reply_to" required>
+                <label for="email">Email</label>
+              </div>
 
-                    <div class="form-group">
-                      <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                          <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
-                        </div>
-                        <textarea class="form-control" placeholder="Envoyez-nous votre message" required></textarea>
-                      </div>
-                    </div>
+              <div class="form-floating mb-3">
+                <textarea id="message" class="form-control" placeholder="Message" style="height: 100px;"
+                  [(ngModel)]="emailData.message" name="message" required></textarea>
+                <label for="message">Message</label>
+              </div>
 
-                    <div class="text-center">
-                      <input type="submit" value="Envoyer" class="btn btn-info btn-block rounded-0 py-2">
-                    </div>
-                  </div>
-
-                </div>
-              </form>
-              <!--Form with header-->
-
+              <button type="submit" class="btn btn-primary w-100">Envoyer</button>
+            </form>
           </div>
 
           <div id="fb-root"></div>
@@ -136,6 +112,8 @@
       <a class="" href="https://www.facebook.com/profile.php?id=100008473697518">Naina Andriamihoatra</a>
     </div>
     <!-- Copyright -->
+
+
   </footer>
 
 </div>

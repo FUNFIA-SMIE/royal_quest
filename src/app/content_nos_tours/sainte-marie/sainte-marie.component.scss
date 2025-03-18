@@ -18,6 +18,41 @@
 
 }
 
+/* Responsiveness */
+@media (max-width: 1400px) {
+    .overlay-text {
+        font-size: 500%; /* Ajuste la taille du texte pour les grands écrans */
+    }
+}
+
+@media (max-width: 995px) {
+    .overlay-text {
+        font-size: 400%; /* Ajuste encore pour les écrans de taille moyenne */
+    }
+}
+
+@media (max-width: 930px) {
+    .overlay-text {
+        font-size: 300%; /* Plus petit pour les tablettes */
+        padding: 10px 15px; /* Réduit l'espacement */
+    }
+}
+
+@media (max-width: 790px) {
+    .overlay-text {
+        font-size: 200%; /* Très petit pour les smartphones */
+        padding: 5px 10px; /* Réduit encore plus l'espacement */
+    }
+}
+
+@media (max-width: 500px) {
+    .overlay-text {
+        font-size:160%; /* Très petit pour les smartphones */
+        padding: 5px 10px; /* Réduit encore plus l'espacement */
+    }
+}
+
+
 /* Effet d'animation pour faire apparaître le texte en douceur */
 @keyframes fadeIn {
     from {
