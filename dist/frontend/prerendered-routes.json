@@ -1,17 +1,17 @@
 {
-  "routes": [
-    "/",
-    "/Conseil",
-    "/Guide",
-    "/Location",
-    "/Nosy_be",
-    "/Ouest",
-    "/Pangalanes",
-    "/Parcs",
-    "/Rakoba",
-    "/Sainte_marie",
-    "/Sud",
-    "/Tours",
-    "/Voyages"
-  ]
+  "routes": {
+    "/": {},
+    "/Conseil": {},
+    "/Guide": {},
+    "/Location": {},
+    "/Nosy_be": {},
+    "/Ouest": {},
+    "/Pangalanes": {},
+    "/Parcs": {},
+    "/Rakoba": {},
+    "/Sainte_marie": {},
+    "/Sud": {},
+    "/Tours": {},
+    "/Voyages": {}
+  }
 }

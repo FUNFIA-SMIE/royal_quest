@@ -5,6 +5,7 @@ import {TranslateModule} from "@ngx-translate/core";
 import {TranslateService} from "@ngx-translate/core";
 import { FooterComponent } from './footer/footer.component';
 
+
 @Component({
     selector: 'app-root',
     standalone:true,
@@ -20,10 +21,16 @@ import { FooterComponent } from './footer/footer.component';
 export class AppComponent {
   title = 'frontend';
 
+  
+
+
   constructor(private translate: TranslateService) {
     this.translate.addLangs(['fr', 'ita']);
     this.translate.setDefaultLang('ita');
     this.translate.use('ita');
   }
+
+
+
 
 }

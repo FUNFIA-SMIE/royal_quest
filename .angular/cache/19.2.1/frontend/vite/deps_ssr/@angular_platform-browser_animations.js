@@ -7,12 +7,12 @@ import {
   NoopAnimationDriver,
   WebAnimationsStyleNormalizer
 } from "./chunk-CDRZQNAC.js";
+import "./chunk-NSCAFHVK.js";
 import {
   BrowserModule,
   DomRendererFactory2
 } from "./chunk-FDCEQ3WW.js";
 import "./chunk-UKY3XITF.js";
-import "./chunk-NSCAFHVK.js";
 import {
   DOCUMENT
 } from "./chunk-LCBAU2VD.js";

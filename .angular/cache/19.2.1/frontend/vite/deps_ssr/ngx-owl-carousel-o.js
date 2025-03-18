@@ -4,8 +4,6 @@ import {
   NavigationEnd,
   Router
 } from "./chunk-LUMU7FHN.js";
-import "./chunk-FDCEQ3WW.js";
-import "./chunk-UKY3XITF.js";
 import {
   animate,
   state,
@@ -13,6 +11,8 @@ import {
   transition,
   trigger
 } from "./chunk-NSCAFHVK.js";
+import "./chunk-FDCEQ3WW.js";
+import "./chunk-UKY3XITF.js";
 import {
   CommonModule,
   LocationStrategy,
