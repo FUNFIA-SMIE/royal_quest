@@ -33,6 +33,8 @@ export class NavbarComponent {
               return 'flag-icon-fr';
             case 'ita':
               return 'flag-icon-it';
+            case 'en':
+              return 'flag-icon-gb';
             default:
               return 'flag-icon-it';    
           }
@@ -46,6 +48,8 @@ export class NavbarComponent {
           return 'Français';
         case 'ita':
           return 'Italien';
+        case 'en':
+          return 'English';
         default:
           return 'Italien';    
       }

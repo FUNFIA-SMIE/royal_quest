@@ -56,7 +56,7 @@
             {{'navbar.Lingua'|translate}}
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li *ngFor="let laguage of ['ita','fr']">
+            <li *ngFor="let laguage of ['ita','fr','en']">
               <a class="dropdown-item" [ngClass]="{'active':multiLangService.languageSignal()===laguage}" (click)="toggleLanguage(laguage)" ><span class="flag-icon {{getLanguageIconClass(laguage)}}"></span> {{getLanguageName(laguage)}}</a>
             </li>
           </ul>

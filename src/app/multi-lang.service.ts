@@ -44,6 +44,8 @@ export class MultiLangService {
           return 'ita';
         case 'fr':
           return 'fr';
+        case 'en':
+          return 'en';
         default:
           return 'ita';
       }
