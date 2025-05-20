@@ -143,7 +143,6 @@
         "h2_3": "Consigli pratici :",
         "p3": "In caso di dubbio su un itinerario, un'attività o qualsiasi altro aspetto del tuo viaggio, non esitare a contattarci. Siamo qui per aiutarti a organizzare un soggiorno indimenticabile e sicuro."
     },
-
     "Guide": {
         "h2": "Le nostre guide",
         "p1": "Guidati da una visione di turismo responsabile e sostenibile, ci impegniamo a offrire servizi eccezionali contribuendo attivamente allo sviluppo economico locale.",
@@ -155,7 +154,8 @@
         "Italien": "Italiano",
         "Allemand": "Tedesco",
         "Espagnol": "Spagnolo",
-        "Chinois": "Cinese"
+        "Chinois": "Cinese",
+        "p5": "Altre lingue possono essere disponibili su richiesta per garantire un’esperienza ancora più personalizzata"
     },
     "location_voiture": {
         "h2": "Noleggio auto",
