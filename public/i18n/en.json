@@ -152,6 +152,24 @@
         "l1_6":"Suitable footwear for hiking.",
         "h2_3":"Useful tips:",
         "p3":"If you have any doubts about an itinerary, an activity or any other aspect of your trip, don't hesitate to contact us. We're here to help you plan an unforgettable and safe trip."
-    }
+    },
+    "Guide": {
+        "h2": "Our guides",
+        "p1": "Driven by a vision of responsible and sustainable tourism, we are committed to providing exceptional services while actively contributing to the local economic development.",
+        "p2": "By working closely with guide associations and engaging local communities, we support job creation for young people, helping build a sustainable future for the region.",
+        "p3": "Our experienced, passionate guides, deeply rooted in Madagascar’s rich culture, will offer you an authentic and unforgettable immersion into the traditions and natural wonders of the country.",
+        "p4":"To better meet your needs, our guides speak several languages :",
+        "Francais": "French",
+        "Anglais": "English",
+        "Italien": "Italian",
+        "Allemand": "German",
+        "Espagnol": "Spanish",
+        "Chinois": "Chinese"
+    },
 
+    "location_voiture":{
+        "h2":"Car rental",
+        "p1":"Embark on a timeless adventure where every road reveals the hidden treasures of Madagascar, where every village echoes with ancestral traditions, and where every moment takes you on a journey rich in culture and discovery.",
+        "p2":"With our fleet of reliable and well-maintained rental cars, set off to conquer breathtaking landscapes with complete peace of mind, and let yourself be enchanted by the magic of a journey where past and present intertwine with every mile."
+    }
 }

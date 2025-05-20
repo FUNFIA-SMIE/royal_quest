@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-guide',
-    imports: [],
+    imports: [TranslateModule],
     templateUrl: './guide.component.html',
     styleUrl: './guide.component.scss'
 })
