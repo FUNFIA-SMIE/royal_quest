@@ -13,9 +13,11 @@ import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class LokobeComponent {
   images = [
-    '/Reniala/Reniala1.jpg',
-    '/Reniala/Reniala2.jpg',
-    '/Reniala/Reniala3.jpg'
+    '/Lokobe/Lokobe1.jpg',
+    '/Lokobe/Lokobe2.JPG',
+    '/Lokobe/Lokobe3.jpg',
+    '/Lokobe/Lokobe4.jpg',
+    '/Lokobe/Lokobe5.jpg',
   ];
   
   carouselOptions: OwlOptions = {
