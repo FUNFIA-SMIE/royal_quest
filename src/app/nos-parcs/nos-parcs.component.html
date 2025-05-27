@@ -9,29 +9,25 @@
 
 
       <ng-template carouselSlide [id]="slide.id.toString()">
+        <div (click)="openDialog(slide.title)" class="card shadow-lg border-0 overflow-hidden position-relative m-2"
+          style="max-width: 600px; height: 400px;">
+          <!-- Image de fond -->
+          <img [src]="slide.img" class="card-img h-100 object-fit-cover" alt="Stony Beach" />
 
-        <div class="card text-white shadow-sm m-2" style="max-width: 600px; height: 400px;">
-          <img [src]="slide.img" class="card-img h-100" alt="Stony Beach" />
-          <div class="card-img-overlay d-flex flex-column justify-content-end"
-            style="background-color: rgba(0, 0, 0, 0.3);">
-            <h1 class="card-title" style="font-size: 4vh;">{{slide.title}}</h1>
-            <button (click)="openDialog(slide.title)" class="btn btn-custom rounded-pill shadow d-flex align-items-center gap-2">
-              <mat-icon>info</mat-icon>
-              {{'Parcs.Ulteriori_informazioni' | translate}}
-            </button>
+          <!-- Voile noir transparent (hover doux inclus) -->
+          <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25 hover-overlay"></div>
+
+          <!-- Icône Play au centre -->
+          <div class="position-absolute top-50 start-50 translate-middle play-icon">
+            <i class="fas fa-play-circle fa-7x text-white"></i>
+          </div>
+
+          <!-- Titre en bas -->
+          <div class="card-img-overlay d-flex flex-column justify-content-end p-4" style="z-index: 2;">
+            <h2 class="text-white fw-bold text-shadow mb-0">{{ slide.title }}</h2>
           </div>
         </div>
 
-        <!--
-      <div class="card shadow-sm" style="width: 18rem; height: 420px;">
-        <img class="card-img-top" [src]="slide.img" alt="Card imae cap">
-        <div class="card-body">
-          <h1 class="card-title">{{slide.title}}</h1>
-          <p class="card-text" [innerHTML]="slide.content" style="text-align: justify;"></p>
-          <a href="#" class="btn btn-primary">Lire la suite</a>
-        </div>
-      </div>
-      -->
 
       </ng-template>
 

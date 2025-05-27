@@ -113,3 +113,24 @@ p {
     }
   }
   
+
+  .play-icon {
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+.card:hover .play-icon {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.hover-overlay {
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .hover-overlay {
+  opacity: 0.4 !important;
+}
