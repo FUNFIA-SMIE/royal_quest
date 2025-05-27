@@ -10,7 +10,7 @@ export class ServiceEmailService {
 
   sendMail(data:any): Promise<any> {
 
-    return emailjs.send('service_n4g87q3', 'template_lfajn6c', data, 'QVwGKZLOqrrB2Lqfm');
+    return emailjs.send('service_ehq1n7j', 'template_irznvd3', data, 'MjWZMT3PivBL4cpt1');
 
   }
 
