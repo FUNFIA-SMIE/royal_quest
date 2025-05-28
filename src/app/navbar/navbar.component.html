@@ -12,31 +12,31 @@
     </button>
 
     <!-- Contenu du navbar -->
-    <div class="collapse navbar-collapse" id="navbarContent">
+    <div class="collapse navbar-collapse" id="navbarContent" #navbarCollapse>
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
-            aria-current="page">{{'navbar.Casa'|translate}}</a>
+            aria-current="page" (click)="closeNavbar(navbarCollapse)">{{'navbar.Casa'|translate}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/Conseil" routerLinkActive="active"
+          <a class="nav-link" (click)="closeNavbar(navbarCollapse)" routerLink="/Conseil" routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }"
             aria-current="page">{{'navbar.Consigli_di_viaggio'|translate}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/Tours" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+          <a class="nav-link" (click)="closeNavbar(navbarCollapse)" routerLink="/Tours" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
             aria-current="page">{{'navbar.I_nostri_parchi'|translate}} </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/Parcs" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+          <a class="nav-link" (click)="closeNavbar(navbarCollapse)" routerLink="/Parcs" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
             aria-current="page">{{'navbar.I_nostri_tour'|translate}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/Guide" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+          <a class="nav-link" (click)="closeNavbar(navbarCollapse)" routerLink="/Guide" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
             aria-current="page">{{'navbar.Guida'|translate}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/Location" routerLinkActive="active"
+          <a class="nav-link" (click)="closeNavbar(navbarCollapse)" routerLink="/Location" routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }" aria-current="page">{{'navbar.Noleggio_auto'|translate}}</a>
         </li>
         <li class="nav-item dropdown">
@@ -46,16 +46,13 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li *ngFor="let laguage of ['ita','fr','en']">
-              <a class="dropdown-item" [ngClass]="{'active':multiLangService.languageSignal()===laguage}"
+              <a (click)="closeNavbar(navbarCollapse)" class="dropdown-item" [ngClass]="{'active':multiLangService.languageSignal()===laguage}"
                 (click)="toggleLanguage(laguage)"><span class="flag-icon {{getLanguageIconClass(laguage)}}"></span>
                 {{getLanguageName(laguage)}}</a>
             </li>
           </ul>
         </li>
-
-
       </ul>
-
     </div>
   </div>
 </nav>

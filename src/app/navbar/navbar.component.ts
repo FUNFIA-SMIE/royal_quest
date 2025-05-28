@@ -56,4 +56,10 @@ export class NavbarComponent {
   
     }
 
+
+    closeNavbar(navbarCollapse: any) {
+  if (window.innerWidth < 992) {
+    navbarCollapse.classList.remove('show');
+  }
+}
 }
