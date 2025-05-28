@@ -6,15 +6,8 @@
     </a>
 
     <!-- Bouton de toggling pour les écrans mobiles -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarContent"
-      aria-controls="navbarContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+      aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -22,47 +15,45 @@
     <div class="collapse navbar-collapse" id="navbarContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" routerLink="/" routerLinkActive="active"
-          [routerLinkActiveOptions]="{ exact: true }" aria-current="page"
-          >{{'navbar.Casa'|translate}}</a>
+          <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+            aria-current="page">{{'navbar.Casa'|translate}}</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="/Conseil" routerLinkActive="active"
-          [routerLinkActiveOptions]="{ exact: true }" aria-current="page"
-          >{{'navbar.Consigli_di_viaggio'|translate}}</a>
+            [routerLinkActiveOptions]="{ exact: true }"
+            aria-current="page">{{'navbar.Consigli_di_viaggio'|translate}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/Tours" routerLinkActive="active"
-          [routerLinkActiveOptions]="{ exact: true }" aria-current="page"
-          >{{'navbar.I_nostri_parchi'|translate}} </a>
+          <a class="nav-link" routerLink="/Tours" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+            aria-current="page">{{'navbar.I_nostri_parchi'|translate}} </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/Parcs" routerLinkActive="active"
-          [routerLinkActiveOptions]="{ exact: true }" aria-current="page"
-          >{{'navbar.I_nostri_tour'|translate}}</a>
+          <a class="nav-link" routerLink="/Parcs" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+            aria-current="page">{{'navbar.I_nostri_tour'|translate}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/Guide" routerLinkActive="active"
-          [routerLinkActiveOptions]="{ exact: true }" aria-current="page"
-          >{{'navbar.Guida'|translate}}</a>
+          <a class="nav-link" routerLink="/Guide" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+            aria-current="page">{{'navbar.Guida'|translate}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/Location" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" aria-current="page"
-          
-          >{{'navbar.Noleggio_auto'|translate}}</a>
+          <a class="nav-link" routerLink="/Location" routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }" aria-current="page">{{'navbar.Noleggio_auto'|translate}}</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
             {{'navbar.Lingua'|translate}}
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li *ngFor="let laguage of ['ita','fr','en']">
-              <a class="dropdown-item" [ngClass]="{'active':multiLangService.languageSignal()===laguage}" (click)="toggleLanguage(laguage)" ><span class="flag-icon {{getLanguageIconClass(laguage)}}"></span> {{getLanguageName(laguage)}}</a>
+              <a class="dropdown-item" [ngClass]="{'active':multiLangService.languageSignal()===laguage}"
+                (click)="toggleLanguage(laguage)"><span class="flag-icon {{getLanguageIconClass(laguage)}}"></span>
+                {{getLanguageName(laguage)}}</a>
             </li>
           </ul>
         </li>
-        
-        
+
+
       </ul>
 
     </div>
