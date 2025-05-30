@@ -164,5 +164,11 @@
         "h2":"Location de voiture",
         "p1":"Embarquez pour une aventure hors du temps, où chaque route révèle les trésors cachés de Madagascar, où chaque village résonne des traditions ancestrales, et où chaque instant vous transporte dans un voyage imprégné de culture et de découvertes.",
         "p2":"Avec notre flotte de voitures de location fiables et parfaitement entretenues, partez à la conquête de paysages grandioses en toute sérénité et laissez-vous envoûter par la magie d’un voyage où passé et présent se rencontrent au fil des kilomètres."
+    },
+    "Nos_tours": {
+        "Est": "Est",
+        "Ouest": "Ouest",
+        "Sud": "Sud",
+        "Grand_Tour": "Grand tour"
     }
 }

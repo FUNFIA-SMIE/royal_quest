@@ -1,38 +1,33 @@
+<div class="container py-5">
 <h2 mat-dialog-title class="shadow-sm" style="text-align: center;">Tsingy</h2>
-<mat-dialog-content class="mat-typography">
 
-    <div class="row">
-        <div class="col-md-6 col-12">
-            <p>
-                {{'Parcs.Tsingy .content.p1' | translate}}
+<div class="row align-items-center">
+    <div class="col-md-6 col-12">
+        <p>
+            {{'Parcs.Tsingy .content.p1' | translate}}
 
-            </p>
-            <p>
-                {{'Parcs.Tsingy .content.p2' | translate}}
+        </p>
+        <p>
+            {{'Parcs.Tsingy .content.p2' | translate}}
 
-            </p>
-            <p>
-                {{'Parcs.Tsingy .content.p3' | translate}}
- 
-            </p>
-        </div>
-        <div class="col-md-6 col-12 text-center">
-            <owl-carousel-o [options]="carouselOptions" class="sticky-image">
-                <ng-container *ngFor="let image of images">
-                    <ng-template carouselSlide>
-                        <img [src]="image" alt="Image du parc" style="height: 500px;" class="img-fluid rounded">
-                    </ng-template>
-                </ng-container>
-            </owl-carousel-o>
-        </div>
-        
+        </p>
+        <p>
+            {{'Parcs.Tsingy .content.p3' | translate}}
 
-
-
+        </p>
+    </div>
+    <div class="col-md-6 col-12 text-center">
+        <owl-carousel-o [options]="carouselOptions" class="sticky-image">
+            <ng-container *ngFor="let image of images">
+                <ng-template carouselSlide>
+                    <img [src]="image" alt="Image du parc" style="height: 500px;" class="img-fluid rounded">
+                </ng-template>
+            </ng-container>
+        </owl-carousel-o>
     </div>
 
 
-</mat-dialog-content>
-<mat-dialog-actions align="end">
-    <button mat-button mat-dialog-close>Cancel</button>
-</mat-dialog-actions>
+
+
+</div>
+</div>

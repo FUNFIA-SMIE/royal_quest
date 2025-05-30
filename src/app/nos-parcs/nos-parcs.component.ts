@@ -13,23 +13,25 @@ import { TsingyComponent } from '../parcs_pages/tsingy/tsingy.component';
 import { RenialComponent } from '../parcs_pages/renial/renial.component';
 import { LokobeComponent } from '../parcs_pages/lokobe/lokobe.component';
 import { TranslateModule } from '@ngx-translate/core';
+import { Router } from '@angular/router';
 
 @Component({
-    selector: 'app-nos-parcs',
-    imports: [
-      NgbCarouselModule, 
-      CommonModule, 
-      CarouselModule, 
-      MatIconModule,
-      TranslateModule
-    ],
-    templateUrl: './nos-parcs.component.html',
-    styleUrl: './nos-parcs.component.scss',
-    changeDetection: ChangeDetectionStrategy.OnPush
+  selector: 'app-nos-parcs',
+  imports: [
+    NgbCarouselModule,
+    CommonModule,
+    CarouselModule,
+    MatIconModule,
+    TranslateModule
+  ],
+  templateUrl: './nos-parcs.component.html',
+  styleUrl: './nos-parcs.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NosParcsComponent {
 
 
+  constructor(private router: Router) { }
 
   title = 'ng-carousel-demo';
 
@@ -127,82 +129,34 @@ export class NosParcsComponent {
     let component;
 
     if (title === "Andasibe") {
-      const dialogRef = this.dialog.open(AndasibeComponent, {
-        width: '500%', // Taille du dialogue, ajustez comme nécessaire
-        data: { message: 'Bonjour depuis le composant parent!' } // Transmettre des données au dialogue, si nécessaire
-      });
-
-      dialogRef.afterClosed().subscribe(result => {
-        console.log(`Dialog result: ${result}`);
-      });
+      this.router.navigate(['/Andasibe']);
     }
 
     if (title === "Ranomafana") {
-      const dialogRef = this.dialog.open(RanomafanaComponent, {
-        width: '500%', // Taille du dialogue, ajustez comme nécessaire
-        data: { message: 'Bonjour depuis le composant parent!' } // Transmettre des données au dialogue, si nécessaire
-      });
+      this.router.navigate(['/Ranomafana']);
 
-      dialogRef.afterClosed().subscribe(result => {
-        console.log(`Dialog result: ${result}`);
-      });
     }
 
     if (title === "Anja") {
-      const dialogRef = this.dialog.open(AnjaComponent, {
-        width: '500%', // Taille du dialogue, ajustez comme nécessaire
-        data: { message: 'Bonjour depuis le composant parent!' } // Transmettre des données au dialogue, si nécessaire
-      });
-
-      dialogRef.afterClosed().subscribe(result => {
-        console.log(`Dialog result: ${result}`);
-      });
+      this.router.navigate(['/Anja']);
     }
 
     if (title === "Isalo") {
-      const dialogRef = this.dialog.open(IsaloComponent, {
-        width: '500%', // Taille du dialogue, ajustez comme nécessaire
-        data: { message: 'Bonjour depuis le composant parent!' } // Transmettre des données au dialogue, si nécessaire
-      });
-
-      dialogRef.afterClosed().subscribe(result => {
-        console.log(`Dialog result: ${result}`);
-      });
+      this.router.navigate(['/Isalo']);
     }
 
     if (title === "Tsingy") {
-      const dialogRef = this.dialog.open(TsingyComponent, {
-        width: '500%', // Taille du dialogue, ajustez comme nécessaire
-        data: { message: 'Bonjour depuis le composant parent!' } // Transmettre des données au dialogue, si nécessaire
-      });
-
-      dialogRef.afterClosed().subscribe(result => {
-        console.log(`Dialog result: ${result}`);
-      });
+      this.router.navigate(['/Tsingy']);
     }
 
     if (title === "Reniala") {
-      const dialogRef = this.dialog.open(RenialComponent, {
-        width: '500%', // Taille du dialogue, ajustez comme nécessaire
-        data: { message: 'Bonjour depuis le composant parent!' } // Transmettre des données au dialogue, si nécessaire
-      });
-
-      dialogRef.afterClosed().subscribe(result => {
-        console.log(`Dialog result: ${result}`);
-      });
+      this.router.navigate(['/Reniala']);
     }
 
     if (title === "Lokobe") {
-      const dialogRef = this.dialog.open(LokobeComponent, {
-        width: '500%', // Taille du dialogue, ajustez comme nécessaire
-        data: { message: 'Bonjour depuis le composant parent!' } // Transmettre des données au dialogue, si nécessaire
-      });
-
-      dialogRef.afterClosed().subscribe(result => {
-        console.log(`Dialog result: ${result}`);
-      });
+      this.router.navigate(['/Lokobe']);
     }
 
-}
+  }
 
 }

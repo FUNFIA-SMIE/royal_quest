@@ -161,5 +161,12 @@
         "h2": "Noleggio auto",
         "p1": "Parti per un’avventura senza tempo, dove ogni strada svela i tesori nascosti del Madagascar, ogni villaggio vibra di tradizioni millenarie e ogni istante ti immerge in un viaggio carico di cultura e meraviglia.",
         "p2": "Con la nostra flotta di auto a noleggio affidabili e perfettamente mantenute, esplora paesaggi mozzafiato con assoluta serenità e lasciati trasportare dalla magia di un’esperienza unica, dove il passato e il presente si fondono in un viaggio indimenticabile."
+    },
+    "Nos_tours":{
+        "Est":"Est",
+        "Ouest":"Ovest",
+        "Sud":"Sud",
+        "Grand_Tour":"Gran tour"
+
     }
 }

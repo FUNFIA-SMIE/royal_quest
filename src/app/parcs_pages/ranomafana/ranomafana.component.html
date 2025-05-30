@@ -1,34 +1,27 @@
-<h2 mat-dialog-title class="shadow-sm" style="text-align: center;">Ranomafana</h2>
-<mat-dialog-content class="mat-typography">
+<div class="container py-5">
+    <h2 class="shadow-sm text-center mb-5">Ranomafana</h2>
 
-    <div class="row align-items-center">
-        <div class="col-md-6 col-12">
-            <p>
-                {{'Parcs.Ranomafana.content.p1' | translate}}
-            </p>
-            <p>
-                {{'Parcs.Ranomafana.content.p2' | translate}}
-   
-            </p>
+<div class="row align-items-center">
+    <div class="col-md-6 col-12">
+        <p>
+            {{'Parcs.Ranomafana.content.p1' | translate}}
+        </p>
+        <p>
+            {{'Parcs.Ranomafana.content.p2' | translate}}
 
-
-        </div>
-        <div class="col-md-6 col-12 text-center">
-            <owl-carousel-o [options]="carouselOptions">
-                <ng-container *ngFor="let image of images">
-                    <ng-template carouselSlide>
-                        <img [src]="image" alt="Image du parc" class="img-fluid rounded" style="height: 450px;">
-                    </ng-template>
-                </ng-container>
-            </owl-carousel-o>
-        </div>
-
+        </p>
 
 
     </div>
+    <div class="col-md-6 col-12 text-center">
+        <owl-carousel-o [options]="carouselOptions">
+            <ng-container *ngFor="let image of images">
+                <ng-template carouselSlide>
+                    <img [src]="image" alt="Image du parc" class="img-fluid rounded" style="height: 450px;">
+                </ng-template>
+            </ng-container>
+        </owl-carousel-o>
+    </div>
 
-
-</mat-dialog-content>
-<mat-dialog-actions align="end">
-    <button mat-button mat-dialog-close>Cancel</button>
-</mat-dialog-actions>
+</div>
+</div>

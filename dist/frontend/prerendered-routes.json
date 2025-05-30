@@ -1,17 +1,24 @@
 {
   "routes": {
     "/": {},
+    "/Andasibe": {},
+    "/Anja": {},
     "/Conseil": {},
     "/Guide": {},
+    "/Isalo": {},
     "/Location": {},
+    "/Lokobe": {},
     "/Nosy_be": {},
     "/Ouest": {},
     "/Pangalanes": {},
     "/Parcs": {},
     "/Rakoba": {},
+    "/Ranomafana": {},
+    "/Reniala": {},
     "/Sainte_marie": {},
     "/Sud": {},
     "/Tours": {},
+    "/Tsingy": {},
     "/Voyages": {}
   }
 }

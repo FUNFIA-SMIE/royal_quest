@@ -1,42 +1,37 @@
-<h2 mat-dialog-title class="shadow-sm" style="text-align: center;">Lokobe</h2>
-<mat-dialog-content class="mat-typography">
+<div class="container py-5">
+    <h2 mat-dialog-title class="shadow-sm" style="text-align: center;">Lokobe</h2>
 
-    <div class="row">
-        <div class="col-md-6 col-12">
-            <p>
-                {{'Parcs.Lokobe .content.p1' | translate}}
-            </p>
-            <p>
-                {{'Parcs.Lokobe .content.p2' | translate}}
+<div class="row align-items-center">
+    <div class="col-md-6 col-12">
+        <p>
+            {{'Parcs.Lokobe .content.p1' | translate}}
+        </p>
+        <p>
+            {{'Parcs.Lokobe .content.p2' | translate}}
 
-            </p>
-            <p>
-                {{'Parcs.Lokobe .content.p3' | translate}}
+        </p>
+        <p>
+            {{'Parcs.Lokobe .content.p3' | translate}}
 
-            </p>
+        </p>
 
-            <p>
-                {{'Parcs.Lokobe .content.p4' | translate}}
+        <p>
+            {{'Parcs.Lokobe .content.p4' | translate}}
 
-            </p>
+        </p>
 
-        </div>
-        <div class="col-md-6 col-12 text-center">
-            <owl-carousel-o [options]="carouselOptions" class="sticky-image">
-                <ng-container *ngFor="let image of images">
-                    <ng-template carouselSlide>
-                        <img [src]="image" alt="Image du parc" style="height: 600px;" class="img-fluid rounded">
-                    </ng-template>
-                </ng-container>
-            </owl-carousel-o>
-        </div>
-        <div class="col-12">
-
-        </div>
     </div>
+    <div class="col-md-6 col-12 text-center">
+        <owl-carousel-o [options]="carouselOptions" class="sticky-image">
+            <ng-container *ngFor="let image of images">
+                <ng-template carouselSlide>
+                    <img [src]="image" alt="Image du parc" style="height: 600px;" class="img-fluid rounded">
+                </ng-template>
+            </ng-container>
+        </owl-carousel-o>
+    </div>
+    <div class="col-12">
 
-
-</mat-dialog-content>
-<mat-dialog-actions align="end">
-    <button mat-button mat-dialog-close>Cancel</button>
-</mat-dialog-actions>
+    </div>
+</div>
+</div>
