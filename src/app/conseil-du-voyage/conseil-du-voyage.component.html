@@ -1,35 +1,57 @@
 <div class="container">
-  <div class="row align-items-center">
+  <div class="position-relative" style="height: 200px; overflow: hidden; border-radius: 0.5rem;">
+    <!-- Image -->
+    <img src="https://fermestsimon.com/images/quelques-astuces-pour-trouver-la-destination-ideale-de-vacances.jpeg"
+      class="w-100 h-100 object-fit-cover" alt="Conseil du voyage">
+
+    <!-- Voile noir transparent -->
+    <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.4);"></div>
+
+    <!-- Texte centré avec animation -->
+    <div class="position-absolute top-50 start-50 translate-middle text-white fade-in-text fs-1 fw-bold">
+      <h1 class="fs-3 fs-md-2 fs-lg-1 text-center">
+        {{ "Conseil.h1" | translate }}
+      </h1>
+    </div>
+  </div>
+
+  <div class="align-items-center my-3">
     <!-- Colonne Texte -->
-    <div class="col-lg-6 col-md-12" style="padding-right: 3%;">    
-        <h1>{{"Conseil.h1" | translate }}</h1>
-        <p>{{"Conseil.p1" | translate }}</p>
+    <div class="">
+      <!--
+      <h1>{{"Conseil.h1" | translate }}</h1>
+      -->
+      <p>{{"Conseil.p1" | translate }}</p>
 
-        <h2>{{"Conseil.h2_1" | translate }}</h2>
-        <ul>
-            <li class="text-justify">{{'Conseil.li_1' | translate }}</li>
-            <li class="text-justify">{{'Conseil.li_2' | translate }}</li>
-        </ul>
+      <h2>{{"Conseil.h2_1" | translate }}</h2>
+      <ul>
+        <li class="text-justify">{{'Conseil.li_1' | translate }}</li>
+        <li class="text-justify">{{'Conseil.li_2' | translate }}</li>
+      </ul>
 
-        <h2>{{'Conseil.h2_2' | translate }}</h2>
-        <p>{{'Conseil.p2' | translate }}</p>
+      <h2>{{'Conseil.h2_2' | translate }}</h2>
+      <p>{{'Conseil.p2' | translate }}</p>
 
-        <h2>{{'Conseil.Preparativi' | translate }}</h2>
-        <p>{{'Conseil.p2' | translate }}</p>
-        <ul>
-            <li>{{'Conseil.l1_3' | translate }}</li>
-            <li>{{'Conseil.l1_4' | translate }}</li>
-            <li>{{'Conseil.l1_5' | translate }}</li>
-            <li>{{'Conseil.l1_6' | translate }}</li>
-        </ul>
+      <h2>{{'Conseil.Preparativi' | translate }}</h2>
+      <p>{{'Conseil.p2' | translate }}</p>
+      <ul>
+        <li>{{'Conseil.l1_3' | translate }}</li>
+        <li>{{'Conseil.l1_4' | translate }}</li>
+        <li>{{'Conseil.l1_5' | translate }}</li>
+        <li>{{'Conseil.l1_6' | translate }}</li>
+      </ul>
 
-        <h2>{{'Conseil.h2_3' | translate }}</h2>
-        <p>{{'Conseil.p3' | translate }}</p>   
+      <h2>{{'Conseil.h2_3' | translate }}</h2>
+      <p>{{'Conseil.p3' | translate }}</p>
     </div>
 
     <!-- Colonne Image -->
+    <!--
     <div class="col-lg-6 col-md-12">
-      <img class="img-fluid w-100 rounded shadow-sm" src="https://fermestsimon.com/images/quelques-astuces-pour-trouver-la-destination-ideale-de-vacances.jpeg" alt="">
+      <img class="img-fluid w-100 rounded shadow-sm"
+        src="https://fermestsimon.com/images/quelques-astuces-pour-trouver-la-destination-ideale-de-vacances.jpeg"
+        alt="">
     </div>
+    -->
   </div>
 </div>
