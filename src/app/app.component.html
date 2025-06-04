@@ -2,4 +2,16 @@
 <main class="content">
   <router-outlet></router-outlet>  <!-- Le contenu dynamique ici -->
 </main>
+
+<router-outlet></router-outlet>
+
+<!-- Bouton WhatsApp flottant -->
+<a
+  role="button"
+  (click)="redirectToWhatsApp('261346799213')"
+  class="btn btn-floating btn-success btn-lg whatsapp-float">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+
 <app-footer></app-footer>
