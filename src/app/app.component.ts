@@ -20,11 +20,25 @@ import { FooterComponent } from './footer/footer.component';
 })
 export class AppComponent {
   title = 'frontend';
+redirectToWhatsApp(phoneNumber: string, message: string = ''): void {
+  const encodedMessage = encodeURIComponent(message);
+  const fallbackUrl = `https://wa.me/${phoneNumber}${message ? '?text=' + encodedMessage : ''}`;
+  const appUrl = `whatsapp://send?phone=${phoneNumber}${message ? '&text=' + encodedMessage : ''}`;
 
-  redirectToWhatsApp(phoneNumber: string) {
-    const url = `https://wa.me/${phoneNumber}`;
-    window.open(url, '_blank');
-  }
+  // Détection mobile
+  const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+  // D'abord essayer whatsapp:// (mobile ou desktop avec appli)
+  const newWindow = window.open(appUrl, '_blank');
+
+  // Fallback vers WhatsApp Web si échec (souvent sur desktop sans appli)
+  setTimeout(() => {
+    if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
+      window.open(fallbackUrl, '_blank');
+    }
+  }, 500);
+}
+
 
 
 
