@@ -18,15 +18,15 @@
         "Le_nostre": {
             "title": "We specialize in organizing trips to suit your every whim. Discover our offers",
             "Viaggi_classici": {
-                "title": "Voyages classics / Classic trips :",
+                "title": "Classic trip :",
                 "descrption": "Let yourself be seduced by freedom. Set off at your own pace and explore Madagascar's treasures in your own way. Every moment is an invitation to discover. Create your own adventure, far off the beaten track."
             },
             "Viaggi_di_gruppo": {
-                "title": "Voyages Group / Group trips:",
+                "title": "Group trip :",
                 "descrption": "Experience the thrill of sharing. With other enthusiasts, immerse yourself in the hustle and bustle of local markets, gaze at thousand-year-old baobabs and explore natural wonders together. Guided by an expert, discover Madagascar in a friendly atmosphere, where every encounter enriches the experience."
             },
             "Viaggi_tematici": {
-                "title": "Voyages themes :",
+                "title": "Thematic trip :",
                 "descrption": "Embark on an exceptional journey. Whether you're a nature lover, culture enthusiast or culinary explorer, our themed trips are designed with you in mind. Follow in the footsteps of lemurs, savor the unique flavors of Malagasy gastronomy, or let yourself be lulled by the ancestral songs of remote villages."
             }
         }
